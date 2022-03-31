@@ -1,0 +1,50 @@
+.researchlab{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    padding: 40px 16px;
+    background-color: #E0F0FF;
+}
+
+.researchlab__info{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+}
+
+.researchlab__info-title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+}
+
+.researchlab__image{
+    width: 288px;
+    height: 180px;
+}
+
+.researchlab__text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000D26;
+}
+
+.researchlab__cards{
+    display: grid;
+    grid-auto-columns: min-content;
+    grid-gap: 8px;
+}
+
+.researchlab__card{
+    background-color: #FFFFFF;
+    width: 140px;
+    height: 224px;
+}
