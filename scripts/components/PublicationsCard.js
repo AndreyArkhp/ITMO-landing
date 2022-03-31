@@ -20,6 +20,7 @@ export default class PublicationsCard {
         this._imageElement.alt = `Иллюстрация публикации ${this._data.title}`;
         this._authorsElement.textContent = this._data.authors;
         this._descriptionElement.textContent = this._data.text;
+        return this._element;
     }
 
 
