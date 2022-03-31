@@ -82,6 +82,10 @@
     background-color: transparent;
 }
 
+.publications-card__share:hover {
+    opacity: .7;
+}
+
 
 
 
