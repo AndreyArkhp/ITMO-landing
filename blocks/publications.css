@@ -11,7 +11,10 @@
     line-height: 33px;
     font-weight: 600;
     color: #000d26;
+}
 
+.publications__swiper {
+    padding-bottom: 32px;
 }
 
 .publications__cards {
@@ -26,10 +29,9 @@
     box-sizing: border-box;
 }
 
-.publications__pagination {
-    margin: 14px 0;
-    display: flex;
-    justify-content: center;
+
+.publications__pagination.swiper-pagination {
+    bottom: 14px;
 }
 
 .publications__pagination > .swiper-pagination-bullet {
@@ -41,4 +43,20 @@
 
 .publications__pagination > .swiper-pagination-bullet-active {
     opacity: 1;
+}
+
+.publications__pagination > .swiper-pagination-bullet-active-prev {
+    transform: none;
+}
+
+.publications__pagination > .swiper-pagination-bullet-active-prev-prev {
+    transform: none;
+}
+
+.publications__pagination > .swiper-pagination-bullet-active-next {
+    transform: none;
+}
+
+.publications__pagination > .swiper-pagination-bullet-active-next-next {
+    transform: none;
 }

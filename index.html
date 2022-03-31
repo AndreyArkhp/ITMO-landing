@@ -15,14 +15,14 @@
         <div class="swiper publications__swiper">
             <ul class="swiper-wrapper publications__cards">
             </ul>
-            <div class="publications__pagination"></div>
+            <div class="publications__pagination swiper-pagination"></div>
         </div>
     </section>
 </main>
 <footer class="footer">
 </footer>
 <template id="publications_card_template">
-    <div class="swiper-slide publications__item">
+    <li class="swiper-slide publications__item">
         <article class="publications-card">
             <img class="publications-card__image" alt="Иллюстрация статьи" src="">
             <h3 class="publications-card__title">Заголовок статьи</h3>
@@ -33,7 +33,7 @@
                 <button class="publications-card__share"></button>
             </div>
         </article>
-    </div>
+    </li>
 </template>
 <script type="module" src="scripts/index.js"></script>
 </body>

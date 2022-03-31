@@ -28,6 +28,8 @@ export default class PublicationsSwiper {
             pagination: {
                 el: ".publications__pagination",
                 clickable: true,
+                dynamicBullets: true,
+                dynamicMainBullets: 1,
             }
         });
     }
