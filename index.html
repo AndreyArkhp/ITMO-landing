@@ -18,6 +18,20 @@
             <div class="publications__pagination"></div>
         </div>
     </section>
+    <section class="projects">
+        <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
+        <div class="projects__filter-block">
+            <h3 class="projects__filter projects__filter_allProjects projects__filter_action">ВСЕ ПРОЕКТЫ</h3>
+            <h3 class="projects__filter projects__filter_govProjects">ГОС.ПРОЕКТЫ</h3>
+            <h3 class="projects__filter projects__filter_specPrograms">СПЕЦПРОГРАММЫ</h3>
+            <h3 class="projects__filter projects__filter_inDevelopment">В РАЗРАБОТКЕ</h3>
+        </div>
+        <div class="swiper projects__swiper">
+            <ul class="swiper-wrapper projects__cards">
+            </ul>
+            <div class="projects__pagination"></div>
+        </div>
+    </section>
 </main>
 <footer class="footer">
 </footer>
@@ -33,6 +47,13 @@
                 <button class="publications-card__share"></button>
             </div>
         </article>
+    </div>
+</template>
+<template id="projects_card_template">
+    <div class="swiper-slide projects-card">
+            <img class="projects-card__image" alt="логотип компании" src="">
+            <p class="projects-card__text"></p>
+            <a class="projects-card__link" href="#">Подробнее</a>
     </div>
 </template>
 <script type="module" src="scripts/index.js"></script>

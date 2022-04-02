@@ -1,5 +1,8 @@
 import PublicationsCard from "/scripts/components/PublicationsCard.js";
 import PublicationsSwiper from "/scripts/components/PublicationsSwiper.js";
+import ProjectsCard from "/scripts/components/ProjectsCard.js";
+import ProjectsSwiper from "/scripts/components/ProjectsSwiper.js";
+import { cardDataProjects } from "../data/cardDataProjects.js";
 
 const publicationsSwiper = new PublicationsSwiper({cardData: [
         {
@@ -69,3 +72,22 @@ const publicationsSwiper = new PublicationsSwiper({cardData: [
 
 publicationsSwiper.renderItems();
 publicationsSwiper.initSwiper();
+
+const renderer = (card) => {
+    const cardObject = new ProjectsCard({
+        data: card,
+        templateSelector: "#projects_card_template"
+    });
+    return cardObject.generate();
+}
+
+const projectsSwiper = new ProjectsSwiper({
+      cardDataProjects,
+      swiperSelector: ".projects__swiper",
+      wrapperSelector: ".projects__cards",
+      filter: "spec",
+      renderer: renderer,
+    });
+
+projectsSwiper.renderItems();
+projectsSwiper.initSwiper();
