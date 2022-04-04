@@ -38,6 +38,7 @@ export default class PublicationsSwiper {
     _initTabletSwiper() {
         return new Swiper(this._swiperSelector, {
             slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 30,
             rewind: true,
             grid: {
