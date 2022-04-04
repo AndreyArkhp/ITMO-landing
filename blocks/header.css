@@ -78,11 +78,31 @@
 .header__menu-item {
   min-height: 44px;
   line-height: 38px;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+.header__menu-item:hover {
+  background-color: #001337;
 }
 
 .header__menu-link {
   text-decoration: none;
   color: #fff;
+}
+
+.header__menu-item_type_dark {
+  opacity: 0.5;
+}
+
+.header__menu-link_size_small {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.header__menu-item_type_ligth {
+  opacity: 1;
 }
 
 .header__burger-menu {
