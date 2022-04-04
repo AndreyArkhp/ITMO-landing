@@ -1,6 +1,6 @@
 import PublicationsCard from "./components/PublicationsCard.js";
 import PublicationsSwiper from "./components/PublicationsSwiper.js";
-import setEventListener from "./components/Handlers.js";
+import setEventListener from "./components/handlers.js";
 const publicationsSwiper = new PublicationsSwiper({
   cardData: [
     {

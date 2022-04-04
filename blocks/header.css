@@ -41,9 +41,9 @@
 
 .header__menu {
   background: #000d26;
-  padding-block-start: 16px;
-  margin-block-start: -324px;
-  transition: 0.1s linear;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.1s linear;
 }
 
 .header__menu_active {
@@ -61,6 +61,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+}
+
+.header__nested-list {
+  max-height: 0;
+  transition: max-height 0.3s linear;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header__nested-list_opened {
+  max-height: 150px;
+  transition: max-height 0.3s linear;
 }
 
 .header__menu-item {
