@@ -12,16 +12,28 @@
 <main class="main">
     <section class="projects">
         <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
-        <div class="projects__filter-block">
-            <h3 class="projects__filter projects__filter_allProjects projects__filter_action">ВСЕ ПРОЕКТЫ</h3>
-            <h3 class="projects__filter projects__filter_govProjects">ГОС.ПРОЕКТЫ</h3>
-            <h3 class="projects__filter projects__filter_specPrograms">СПЕЦПРОГРАММЫ</h3>
-            <h3 class="projects__filter projects__filter_inDevelopment">В РАЗРАБОТКЕ</h3>
+        <div class="projects__filter-block-mobile">
+            <h3 class="projects__filter projects__filter-mobile_allProjects-header projects__filter_action">ВСЕ ПРОЕКТЫ</h3>
+           <ul class="projects__filter-block-list disabled"> 
+            <li><h3 class="projects__filter projects__filter_allProjects projects__filter_action">ВСЕ ПРОЕКТЫ</h3></li>
+            <li><h3 class="projects__filter projects__filter_govProjects">ГОС.ПРОЕКТЫ</h3></li>
+            <li><h3 class="projects__filter projects__filter_specPrograms">СПЕЦПРОГРАММЫ</h3></li>
+            <li><h3 class="projects__filter projects__filter_inDevelopment">В РАЗРАБОТКЕ</h3></li>
+            </ul>
         </div>
+        <ul class="projects__filter-block">
+            <li><h3 class="projects__filter projects__filter_allProjects projects__filter_action">ВСЕ ПРОЕКТЫ</h3></li>
+            <li><h3 class="projects__filter projects__filter_govProjects">ГОС.ПРОЕКТЫ</h3></li>
+            <li><h3 class="projects__filter projects__filter_specPrograms">СПЕЦПРОГРАММЫ</h3></li>
+            <li><h3 class="projects__filter projects__filter_inDevelopment">В РАЗРАБОТКЕ</h3></li>
+        </ul>
         <div class="swiper projects__swiper">
             <ul class="swiper-wrapper projects__cards">
             </ul>
-            <div class="projects__pagination"></div>
+            <div class="swiper-pagination projects__pagination"></div>
+            <div class="swiper-button-prev projects__button-prev"></div>
+            <div class="swiper-button-next projects__button-next"></div>
+            <!-- <div class="swiper-scrollbar projects__scrollbar"></div> -->
         </div>
     </section>
     <section class="publications">

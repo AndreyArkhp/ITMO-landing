@@ -18,18 +18,33 @@ export default class ProjectsSwiper {
             } 
         });
     }
-
+   
     initSwiper() {
         const swiper = new Swiper(this._swiperSelector, {
             loop: true,
-            loopedSlides: this._cardData.length,
-            slidesPerView: "auto",
-            centeredSlides: true,
+            loopedSlides: 1,
+            // nested: true,
+            speed: 400,
             spaceBetween: 8,
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            effect: "slide",
+            watchOverflow: true,
             pagination: {
                 el: ".projects__pagination",
                 clickable: true,
-            }
+            },
+            navigation: {
+                nextEl: '.projects__button-next',
+                prevEl: '.projects__button-prev',
+              },
+              breakpoints: {
+                480: { 
+                    spaceBetween: 8, 
+                    // slidesPerView: 3,
+                }
+                // 900: { slidesPerView: 3 },
+              },
         });
     }
 }

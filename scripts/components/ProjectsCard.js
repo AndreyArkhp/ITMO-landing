@@ -14,7 +14,6 @@ export default class ProjectsCard {
       .querySelector(this._templateSelector)
       .content.querySelector(".projects-card")
       .cloneNode(true);
-    console.log("_getElement", cardElement);
     return cardElement;
   }
 

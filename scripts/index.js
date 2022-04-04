@@ -3,6 +3,7 @@ import PublicationsSwiper from "/scripts/components/PublicationsSwiper.js";
 import ProjectsCard from "/scripts/components/ProjectsCard.js";
 import ProjectsSwiper from "/scripts/components/ProjectsSwiper.js";
 import { cardDataProjects } from "../data/cardDataProjects.js";
+import { projectsMobileMenuHeader, projectsMobileMenuList, projectsSwiperBlock } from "../utils/constants.js";
 
 const publicationsSwiper = new PublicationsSwiper({cardData: [
         {
@@ -81,13 +82,19 @@ const renderer = (card) => {
     return cardObject.generate();
 }
 
+const filter = "";
 const projectsSwiper = new ProjectsSwiper({
       cardDataProjects,
       swiperSelector: ".projects__swiper",
       wrapperSelector: ".projects__cards",
-      filter: "spec",
+      filter: filter,
       renderer: renderer,
     });
+const toddle = () => {
+    projectsSwiperBlock.classList.toggle("disabled")
+    projectsMobileMenuList.classList.toggle("disabled")
+}
+projectsMobileMenuHeader.addEventListener("click", toddle);
 
 projectsSwiper.renderItems();
 projectsSwiper.initSwiper();
