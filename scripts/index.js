@@ -1,5 +1,6 @@
 import PublicationsCard from "/scripts/components/PublicationsCard.js";
 import PublicationsSwiper from "/scripts/components/PublicationsSwiper.js";
+import aboutSwiper from "./components/aboutSwiper.js";
 
 const publicationsSwiper = new PublicationsSwiper({cardData: [
         {
@@ -69,3 +70,5 @@ const publicationsSwiper = new PublicationsSwiper({cardData: [
 
 publicationsSwiper.renderItems();
 publicationsSwiper.initSwiper();
+
+aboutSwiper.init();
