@@ -7,7 +7,8 @@ export default class PublicationsSwiper {
         this._wrapperSelector = wrapperSelector;
         this._wrapperElement = document.querySelector(wrapperSelector);
         this._renderer = renderer;
-
+        this._mobileBreakpoint = window.matchMedia("(min-width: 320px)");
+        this._tabletBreakpoint = window.matchMedia("(min-width: 768px)");
     }
 
     renderItems() {
@@ -18,8 +19,8 @@ export default class PublicationsSwiper {
         });
     }
 
-    initSwiper() {
-        const swiper = new Swiper(this._swiperSelector, {
+    _initMobileSwiper() {
+        return new Swiper(this._swiperSelector, {
             loop: true,
             loopedSlides: this._cardData.length,
             slidesPerView: "auto",
@@ -32,5 +33,53 @@ export default class PublicationsSwiper {
                 dynamicMainBullets: 1,
             }
         });
+    }
+
+    _initTabletSwiper() {
+        return new Swiper(this._swiperSelector, {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            rewind: true,
+            grid: {
+                fill: 'row',
+                rows: 2,
+            },
+            pagination: {
+                el: ".publications__pagination",
+                clickable: true,
+                dynamicBullets: true,
+                dynamicMainBullets: 1,
+            },
+        });
+    }
+
+    _handleBreakpoints() {
+        if(this._tabletBreakpoint.matches) {
+            console.log(this._tabletSwiper);
+            this._mobileSwiper.destroy(true, true);
+            if(this._tabletSwiper.destroyed) {
+                this._tabletSwiper = this._initTabletSwiper();
+            }
+        } else {
+            this._tabletSwiper.destroy(true, true);
+            if(this._mobileSwiper.destroyed) {
+                this._mobileSwiper = this._initMobileSwiper();
+            }
+        }
+    }
+
+
+    _setEventListeners() {
+        this._mobileBreakpoint.addEventListener("change", () => this._handleBreakpoints());
+        this._tabletBreakpoint.addEventListener("change", () => this._handleBreakpoints());
+    }
+
+    initSwiper() {
+        this._mobileSwiper = this._initMobileSwiper();
+        this._mobileSwiper.destroy(true, true);
+        this._tabletSwiper = this._initTabletSwiper();
+        this._tabletSwiper.destroy(true, true);
+        this._setEventListeners();
+        this._handleBreakpoints();
     }
 }
