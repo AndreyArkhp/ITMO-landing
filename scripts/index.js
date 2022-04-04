@@ -1,12 +1,6 @@
 import PublicationsCard from "./components/PublicationsCard.js";
 import PublicationsSwiper from "./components/PublicationsSwiper.js";
-import {
-  handleClickCloseMenu,
-  btnCloseMenu,
-  btnBurgerMenu,
-  handleClickOpenMenu,
-} from "./components/Header.js";
-
+import setEventListener from "./components/Handlers.js";
 const publicationsSwiper = new PublicationsSwiper({
   cardData: [
     {
@@ -83,6 +77,4 @@ const publicationsSwiper = new PublicationsSwiper({
 
 publicationsSwiper.renderItems();
 publicationsSwiper.initSwiper();
-
-btnCloseMenu.addEventListener("click", handleClickCloseMenu);
-btnBurgerMenu.addEventListener("click", handleClickOpenMenu);
+setEventListener();
