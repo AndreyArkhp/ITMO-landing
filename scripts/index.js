@@ -1,5 +1,6 @@
 import PublicationsCard from "./components/PublicationsCard.js";
 import PublicationsSwiper from "./components/PublicationsSwiper.js";
+import aboutSwiper from "./components/aboutSwiper.js";
 import setEventListener from "./components/handlers.js";
 import {publicationsData} from "./utils/data.js";
 import ProjectsCard from "/scripts/components/ProjectsCard.js";
@@ -13,6 +14,7 @@ const publicationsSwiper = new PublicationsSwiper({cardData: publicationsData, s
   }});
   publicationsSwiper.renderItems();
   publicationsSwiper.initSwiper();
+  aboutSwiper.init();
   setEventListener();
 
 const renderer = (card) => {
@@ -55,5 +57,3 @@ allProjects.addEventListener("click", toggleFilter);
 
 projectsSwiper.renderItems(filter);
 projectsSwiper.initSwiper();
-
-
