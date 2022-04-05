@@ -43,7 +43,8 @@
     grid-area: img;
     height: 160px;
     width: 100%;
-    border-radius: 5px
+    border-radius: 5px;
+    object-fit: cover;
 }
 .study__info{
     grid-area: info;
