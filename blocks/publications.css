@@ -7,8 +7,8 @@
 .publications__heading {
     text-align: center;
     text-transform: uppercase;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 600;
     color: #000d26;
     margin: 0 0 20px;
@@ -71,6 +71,8 @@
 
     .publications__heading {
         margin: 0 0 40px;
+        font-size: 24px;
+        line-height: 33px;
     }
 
     .publications__item {
