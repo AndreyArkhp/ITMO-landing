@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Лендинг для лаборатории ИТМО</title>
-    <link href="pages/index.css" rel="stylesheet">
-</head>
-<body class="page">
-<header class="header">
-</header>
+    <link href="pages/index.css" rel="stylesheet" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__content">
+        <button class="header__burger-menu"></button>
+        <img src="./images/Header/logo.svg" alt="Логотип" class="header__logo" />
+
+        <button class="header__close-icon"></button>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a href="#" class="header__menu-link">О нас</a></li>
+          <li class="header__menu-item"><a href="#" class="header__menu-link">Лаборатория</a></li>
+          <li class="header__menu-item"><a href="#" class="header__menu-link">Проекты</a></li>
+          <li
+            class="header__menu-item header__menu-item_type_container header__menu-item_type_ligth"
+          >
+            <a href="#" class="header__menu-link">Образование</a>
+          </li>
+          <ul class="header__menu-list header__nested-list">
+            <li class="header__menu-item header__menu-link_size_small header__menu-item_type_ligth">
+              <a href="#" class="header__menu-link">Магистратура</a>
+            </li>
+            <li class="header__menu-item header__menu-link_size_small header__menu-item_type_ligth">
+              <a href="#" class="header__menu-link">Аспирантура</a>
+            </li>
+          </ul>
+          <li class="header__menu-item"><a href="#" class="header__menu-link">Публикации</a></li>
+          <li class="header__menu-item"><a href="#" class="header__menu-link">Команда</a></li>
+          <li class="header__menu-item"><a href="#" class="header__menu-link">Связаться</a></li>
+        </ul>
+      </nav>
+    </header>
 <main class="main">
     <section class="projects">
         <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
@@ -40,35 +69,36 @@
     </section>
     <section class="publications">
         <h2 class="publications__heading">Публикации</h2>
-        <div class="swiper publications__swiper">
+        <div class="publications__swiper-container">
+          <div class="swiper publications__swiper">
             <ul class="swiper-wrapper publications__cards">
             </ul>
-            <div class="publications__pagination"></div>
+            <div class="publications__pagination swiper-pagination"></div>
+          </div>
         </div>
-    </section>
-</main>
-<footer class="footer">
-</footer>
-<template id="publications_card_template">
-    <div class="swiper-slide publications__item">
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <template id="publications_card_template">
+      <li class="swiper-slide publications__item">
         <article class="publications-card">
-            <img class="publications-card__image" alt="Иллюстрация статьи" src="">
-            <h3 class="publications-card__title">Заголовок статьи</h3>
-            <p class="publications-card__authors">Авторы статьи</p>
-            <p class="publications-card__text">Описание статьи</p>
-            <div class="publications-card__actions">
-                <a class="publications-card__link" href="#">Читать полностью</a>
-                <button class="publications-card__share"></button>
-            </div>
+          <img class="publications-card__image" alt="Иллюстрация статьи" src="">
+          <h3 class="publications-card__title">Заголовок статьи</h3>
+          <p class="publications-card__authors">Авторы статьи</p>
+          <p class="publications-card__text">Описание статьи</p>
+          <div class="publications-card__actions">
+            <a class="publications-card__link" href="#">Читать полностью</a>
+            <button class="publications-card__share"></button>
+          </div>
         </article>
     </div>
 </template>
 <template id="projects_card_template">
-    <div class="swiper-slide projects-card">
+    <li class="swiper-slide projects-card">
             <img class="projects-card__image" alt="логотип компании" src="">
             <p class="projects-card__text"></p>
             <a class="projects-card__link" href="#">Подробнее</a>
-    </div>
+    </li>
 </template>
 <script type="module" src="scripts/index.js"></script>
 </body>

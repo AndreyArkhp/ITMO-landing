@@ -1,18 +1,23 @@
 .publications {
     background-color: #e0f0ff;
     font-family: "Open Sans", Arial, sans-serif;
-    padding: 60px 0 0;
+    padding: 40px 0 0;
 }
 
 .publications__heading {
     text-align: center;
     text-transform: uppercase;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 600;
     color: #000d26;
-
+    margin: 0 0 20px;
 }
+
+.publications__swiper {
+    padding-bottom: 32px;
+}
+
 
 .publications__cards {
     box-sizing: border-box;
@@ -21,15 +26,14 @@
 }
 
 .publications__item {
-    width: 288px;
-    height: 462px;
+    max-width: 288px;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
-.publications__pagination {
-    margin: 14px 0;
-    display: flex;
-    justify-content: center;
+
+.publications__pagination.swiper-pagination {
+    bottom: 14px;
 }
 
 .publications__pagination > .swiper-pagination-bullet {
@@ -41,4 +45,56 @@
 
 .publications__pagination > .swiper-pagination-bullet-active {
     opacity: 1;
+}
+
+.publications__pagination > .swiper-pagination-bullet-active-prev {
+    transform: none;
+}
+
+.publications__pagination > .swiper-pagination-bullet-active-prev-prev {
+    transform: none;
+}
+
+.publications__pagination > .swiper-pagination-bullet-active-next {
+    transform: none;
+}
+
+.publications__pagination > .swiper-pagination-bullet-active-next-next {
+    transform: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .publications {
+        padding: 60px 0 0;
+    }
+
+    .publications__heading {
+        margin: 0 0 40px;
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .publications__item {
+        max-width: 330px;
+    }
+
+    .publications__swiper-container {
+        padding: 0 39px;
+        max-width: 690px;
+        margin: 0 auto;
+    }
+
+    .publications__swiper {
+        padding-bottom: 50px;
+    }
+
+    .publications__pagination.swiper-pagination {
+        bottom: 21px;
+    }
+
+    .publications__pagination > .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+    }
 }
