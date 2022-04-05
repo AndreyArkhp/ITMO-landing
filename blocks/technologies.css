@@ -1,0 +1,21 @@
+.technologies {
+    width: 100%;
+    min-width: 320px;
+    background-color: #000d26;
+    color: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+.technologies__container{
+    width: 100%;
+    position: relative;
+    background-image: url("../images/background-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.technologies__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.37;
+    letter-spacing: 0.1px;
+}
