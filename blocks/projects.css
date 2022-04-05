@@ -3,7 +3,8 @@
     flex-direction: column;
   background-color: #001337;
   font-family: "Open Sans", Arial, sans-serif;
-  padding: 40px 0 0;
+  padding: 40px 16px 0 16px;
+  box-sizing: border-box;
 }
 
 .projects__heading {
@@ -95,7 +96,7 @@ background-image: url(../images/icons/arrow-up.svg);
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  min-width: 288px;
 }
 
 /* @media screen and (min-width: 480px) {
@@ -130,7 +131,7 @@ display: none;
   margin: 0;
 }
 .projects__swiper {
-    width: 320px;
+    width: 288px;
     height: 258px;
     margin: 20px auto 40px;
     padding: 0;
