@@ -1,5 +1,7 @@
 import PublicationsCard from "/scripts/components/PublicationsCard.js";
 import PublicationsSwiper from "/scripts/components/PublicationsSwiper.js";
+import {studyBtns, handleBtnClick} from "./components/study.js";
+studyBtns.forEach(btn => btn.addEventListener('click', handleBtnClick))
 
 const publicationsSwiper = new PublicationsSwiper({cardData: [
         {
