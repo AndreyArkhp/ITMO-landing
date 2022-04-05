@@ -1,5 +1,3 @@
-import PublicationsCard from "/scripts/components/PublicationsCard.js";
-import PublicationsSwiper from "/scripts/components/PublicationsSwiper.js";
 import PublicationsCard from "./components/PublicationsCard.js";
 import PublicationsSwiper from "./components/PublicationsSwiper.js";
 import setEventListener from "./components/handlers.js";
