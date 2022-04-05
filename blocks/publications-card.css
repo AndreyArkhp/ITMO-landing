@@ -132,6 +132,7 @@
     }
 
     .publications-card__actions {
+        margin: 10px 0 0;
         min-height: 60px;
         padding: 0 22px 0 20px;
     }
