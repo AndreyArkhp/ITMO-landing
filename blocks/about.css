@@ -35,7 +35,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 15px;
-    max-width: 288px;
+    /*max-width: 288px;*/
     background-color: #E0F0FF;
     border-radius: 5px;
     position: relative;
@@ -65,6 +65,7 @@
     margin: 8px 0 12px;
 }
 .about__card-text {
+    margin: 0;
     padding-top: 12px;
     font-weight: 400;
     font-size: 12px;

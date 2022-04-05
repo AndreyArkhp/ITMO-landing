@@ -4,7 +4,6 @@ const aboutSwiper = new Swiper('.about__swiper', {
   loop: false,
   centeredSlides: true,
   speed: 400,
-  spaceBetween: 10,
   enabled: true,
   init: true,
   wrapperClass: 'swiper-wrapper',
@@ -27,7 +26,7 @@ const aboutSwiper = new Swiper('.about__swiper', {
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
-    dynamicMainBullets: 1,
+    dynamicMainBullets: 4,
     clickable: true
   },
   
