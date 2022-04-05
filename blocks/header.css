@@ -1,0 +1,122 @@
+.header {
+  color: #fff;
+  min-width: 320px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  background: #000d26;
+  z-index: 10;
+  position: relative;
+}
+
+.header__logo {
+  object-fit: contain;
+  width: 71px;
+  margin: 10px auto 10px auto;
+  padding-inline-end: 38px;
+}
+
+.header__logo_menu_open {
+  margin: 10px auto 10px 16px;
+}
+
+.header__close-icon {
+  background-image: url("../images/Header/close.svg");
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  margin: 12px 16px;
+  padding: 0;
+  background-position: center;
+  cursor: pointer;
+  display: none;
+}
+
+.header__close-icon_active {
+  display: block;
+}
+
+.header__menu {
+  background: #000d26;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.1s linear;
+}
+
+.header__menu_active {
+  margin-block-start: 0;
+  height: 100vh;
+}
+
+.header__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.header__nested-list {
+  max-height: 0;
+  transition: max-height 0.3s linear;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header__nested-list_opened {
+  max-height: 150px;
+  transition: max-height 0.3s linear;
+}
+
+.header__menu-item {
+  min-height: 44px;
+  line-height: 38px;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+.header__menu-item:hover {
+  background-color: #001337;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  padding-inline-start: 16px;
+  color: #fff;
+}
+
+.header__menu-item_type_dark {
+  opacity: 0.5;
+}
+
+.header__menu-link_size_small {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.header__menu-item_type_ligth {
+  opacity: 1;
+}
+
+.header__burger-menu {
+  background-color: transparent;
+  background-image: url("../images/Header/burger-menu.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  margin-block-start: 10px;
+  margin-inline-start: 18px;
+}
+
+.header__burger-menu_disabled {
+  display: none;
+}
