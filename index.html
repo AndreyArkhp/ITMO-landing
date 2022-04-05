@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Лендинг для лаборатории ИТМО</title>
-    <link href="pages/index.css" rel="stylesheet" />
-  </head>
-  <body class="page">
-    <header class="header">
-      <div class="header__content">
+    <link href="pages/index.css" rel="stylesheet">
+</head>
+<body class="page">
+<header class="header">
+   <div class="header__content">
         <button class="header__burger-menu"></button>
         <img src="./images/Header/logo.svg" alt="Логотип" class="header__logo" />
 
@@ -37,9 +37,79 @@
           <li class="header__menu-item"><a href="#" class="header__menu-link">Связаться</a></li>
         </ul>
       </nav>
-    </header>
-    <main class="main">
-      <section class="publications">
+</header>
+<main class="main">
+    <section class="about">
+        <div class="about__container">
+            <h2 class="about__title">Несколько слов о нас</h2>
+            <p class="about__text">Национальный центр когнитивных разработок&mdash; центр национальной технологической инициативы (НТИ), получивший государственную поддержку по&nbsp;направлению &laquo;Технологии машинного обучения
+                и&nbsp;когнитивные технологии&raquo;.</p>
+            <div class="swiper about__swiper" id="swiper-container-1">
+              <ul class="swiper-wrapper about__cards">
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Понедельник, 5 июля 2021г</p>
+                        <h3 class="about__card-title">ЗНАКОМСТВО С МАШИННЫМ ОБУЧЕНИЕМ: СТУДЕНТЫ ЕВРАЗИЙСКОГО НАЦИОНАЛЬ…</h3>
+                        <p class="about__card-text">Университет ИТМО провел научно-исследовательскую стажировку для группы магистрантов из Евразийского национального университета имени Л.Н. Гумилева. Ведущие преподаватели  в течение десяти дней рассказывали им об основах машинного обучения. </p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Понедельник, 5 июля 2021г</p>
+                        <h3 class="about__card-title">АВТОРЫ РОБОТА-МУЗЫКАНТА РОБЕРТА РОБОТЕЦКОГО ПРИЗНАНЫ ЛУЧШИМИ НОВИЧК…</h3>
+                        <p class="about__card-text">Команда ИТМО стала лучшей на международном финале RoboCup-2021. Успех принес Роберт Роботецкий — робот-виртуоз, исполнивший знаменитый французский романс «Под небом Парижа». В подготовке команды участвовали сотрудники лаборатории.</p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Суббота, 3 июля 2021г</p>
+                        <h3 class="about__card-title">ВОЗВРАЩЕНИЕ НА ПЕТРОПАВЛОВКУ: КАК ПРОШЕЛ ВЫПУСКНОЙ ITMO. LIVE — 2021</h3>
+                        <p class="about__card-text">Команда ИТМО сделала многое, чтобы вернуть формат выпускного этого и прошлого года. Из-за эпидемиологической ситуации отменена развлекательная часть, но&nbsp;сохранилась&nbsp;торжественная.&nbsp;Выпускники смогли получить дипломы из рук деканов и услышать поздравления ректора.</p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Пятница, 2 июля 2021г</p>
+                        <h3 class="about__card-title">«LEAVING THE DIGITAL» — ИЛИ КАК СОЕДИНИТЬ ЦИФРОВОЕ, ТЕХНОЛОГИЧЕСКОЕ И БИОЛОГ…</h3>
+                        <p class="about__card-text">Преподаватели центра Art & Science Университета ИТМО провели открытый воркшоп, посвященный созданию произведений, объединяющих в себе биологическую и синтетическую среды. Серия занятий приурочена к приемной кампании в магистратуру центра.</p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Пятница, 2 июля 2021г</p>
+                        <h3 class="about__card-title">В ИТМО ЗАПУСКАЕТСЯ ПЕРВАЯ ПРОЕТНАЯ МАГИСТРАТУРА — ДЛЯ АБИТУРИЕНТОВ ФАКУЛЬТЕТА П…</h3>
+                        <p class="about__card-text">Особенность&nbsp;нового&nbsp;формата&nbsp;магистратуры в том, что студенты смогут составлять программу своего обучения, выбирать только те курсы, которые им интересны, а главное — работать над технологически сложным проектом под руководством менторов из топовых IT-компаний.</p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Пятница, 2 июля 2021г</p>
+                        <h3 class="about__card-title">КОГДА НЕ ЗАНИМАЕШЬСЯ СВОИМ ОБРАЗОВАНИЕМ, МОЖНО ПРИЙТИ К СОТСТОЯНИ…</h3>
+                        <p class="about__card-text">Владислав Танков поступил в ИТМО будучи специалистом в компании JetBrains. На одном из хакатонов в рамках программы с JetBrains он сделал плагин для проверки грамотности текстов в среде разработки IntelliJ IDEA. После окончания магистратуры Владислав возглавил команду разработки.</p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Четверг, 1 июля 2021г</p>
+                        <h3 class="about__card-title">СТУДЕНТЫ ИТМО И ВЫПУСКНИКИ ЛЭТИ РАЗРАБОТАЛИ МОДУЛЬ ДЛЯ БЫ…</h3>
+                        <p class="about__card-text">Интеллектуальный модуль для станций зарядки позволяет заряжать накопители в электрокарах и электросамокатах быстрее, чем при питании от сети. Программное обеспечение&nbsp;модуля&nbsp;обеспечивает&nbsp;защиту&nbsp;в случае аварийных ситуаций и повышает эффективность&nbsp;всего&nbsp;зарядного&nbsp;устройства.</p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Четверг, 1 июля 2021г</p>
+                        <h3 class="about__card-title">КАКИЕ СУЩЕСТВУЮТ ВАКЦИНЫ, КАК ИХ ИСПЫТЫВАЮТ, И ПО КАКИМ ПРИНЦЫПАМ ИХ СЛЕДУ…</h3>
+                        <p class="about__card-text">Вакцинация от коронавируса стала одной из главных тем. Весь мир следит за количеством привитых. Прививочная кампания дает результат — снижается смертность,&nbsp;количество&nbsp;госпитализаций.&nbsp;Но вокруг вакцинации остается много мифов, которые вызывают у скептиков споры.</p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Среда, 30 июня 2021г</p>
+                        <h3 class="about__card-title">УНИВЕРСИТЕТ ИТМО ЗАПУСКАЕТ НОВУЮ КОРПОРАТИВНУЮ СПЕЦИАЛИЗАЦИЮ В МАГИСТРА…</h3>
+                        <p class="about__card-text">Партнером нового направления станет Napoleon IT. Сотрудники компании и преподаватели ИТМО будут готовить магистров, которые смогут работать в проектах,&nbsp;связанных&nbsp;с&nbsp;распознаванием&nbsp;лиц, технологиями deepfake, созданием приложений&nbsp;для&nbsp;распознавания&nbsp;предметов.</p>
+                    </li>
+                    <li class="swiper-slide about__card">
+                        <p class="about__date">Среда, 30 июня 2021г</p>
+                        <h3 class="about__card-title">СТУДЕНТКА И СОТРУДНИЦА ИТМО АННА ВОЛОШИНА ПОЛУЧИЛА БРОНЗОВОГО СФИН...</h3>
+                        <p class="about__card-text">В Петропавловской крепости состоялась торжественная церемония вручения наград лучшим выпускникам Санкт-Петербурга. Среди тех, кто получил памятную статуэтку, была выпускница факультета технологического менеджмента и инноваций Анна Волошина. </p>
+                    </li>
+              </ul>
+
+              <ul class="about__pagination swiper-pagination">
+<!--                <li class="about__round about__round_active"></li>-->
+<!--                <li class="about__round"></li>-->
+<!--                <li class="about__round"></li>-->
+<!--                <li class="about__round"></li>-->
+              </ul>
+            </div>
+
+        </div>
+    </section>
+    <section class="publications">
+
         <h2 class="publications__heading">Публикации</h2>
         <div class="publications__swiper-container">
           <div class="swiper publications__swiper">
