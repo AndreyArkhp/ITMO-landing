@@ -1,9 +1,11 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
+@import url(../blocks/main.css);
 @import url(https://unpkg.com/swiper@8/swiper-bundle.min.css);
 @import url(../blocks/publications.css);
 @import url(../blocks/publications-card.css);
 @import url(../blocks/about.css);
 @import url(../blocks/header.css);
+@import url(../blocks/technologies.css);
 
 @import url(../blocks/study.css);
