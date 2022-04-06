@@ -75,5 +75,5 @@
 }
 
 .form__submit:active {
-  box-shadow: inset -2px -2px 5px #00818d;
+  box-shadow: inset -2px -2px 5px #00818d, inset 2px 2px 5px #00818d;
 }
