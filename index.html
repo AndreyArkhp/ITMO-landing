@@ -252,6 +252,50 @@
           </div>
         </div>
       </section>
+      <section class="feedback">
+        <div class="feedback__container">
+          <h2 class="feedback__title">ВСЕГДА НА СВЯЗИ</h2>
+          <p class="feedback__text">
+            По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам,
+            написать на почту или оставтиь свое сообщение через форму обратной связи.
+          </p>
+          <form name="feedback" class="form">
+            <input
+              type="text"
+              class="form__element form__element_type_name"
+              placeholder="Имя"
+              name="name"
+            />
+            <input
+              type="text"
+              class="form__element form__element_type_surname"
+              placeholder="Фамилия"
+              name="surname"
+            />
+            <input
+              type="tel"
+              class="form__element form__element_type_phone"
+              placeholder="Телефон"
+              name="phone"
+            />
+            <input
+              type="email"
+              class="form__element form__element_type_email"
+              placeholder="E-mail"
+              name="email"
+            />
+            <textarea
+              name="message"
+              cols="30"
+              rows="7"
+              class="form__element form__element_type_message"
+              placeholder="Сообщение"
+              maxlength="250"
+            ></textarea>
+            <button type="submit" class="form__submit">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
     <template id="publications_card_template">

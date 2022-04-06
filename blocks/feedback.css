@@ -1,0 +1,28 @@
+.feedback {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #009fac;
+  color: #fff;
+  min-width: 320px;
+}
+
+.feedback__container {
+  max-width: calc(100% - 32px);
+  margin: 0 auto;
+}
+
+.feedback__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding: 40px 0 23px;
+  margin: 0;
+}
+
+.feedback__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  margin-block-end: 23px;
+}
