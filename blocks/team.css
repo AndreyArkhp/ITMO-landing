@@ -1,7 +1,8 @@
 .team {
-    background-color: #e0f0ff;
+    background-color: rgba(0, 19, 55, 1);
     font-family: "Open Sans", Arial, sans-serif;
     padding: 40px 0 0;
+    color:#FFFFFF;
 }
 
 .team__heading {
@@ -10,7 +11,7 @@
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
-    color: #000d26;
+    color: inherit;
     margin: 0 0 20px;
 }
 
