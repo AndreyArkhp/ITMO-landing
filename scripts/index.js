@@ -17,10 +17,10 @@ const publicationsSwiper = new PublicationsSwiper({cardData: publicationsData, s
   publicationsSwiper.initSwiper();
   aboutSwiper.init();
   setEventListener();
-const renderer = (card) => {
+const renderer = (card, templateSelector) => {
     const cardObject = new ProjectsCard({
         data: card,
-        templateSelector: "#projects_card_template"
+        templateSelector: templateSelector,
     });
     return cardObject.generate();
 }
@@ -29,6 +29,7 @@ const projectsSwiper = new ProjectsSwiper({
       cardDataProjects,
       swiperSelector: ".projects__swiper",
       wrapperSelector: ".projects__cards",
+      templateSelector: "#projects_card_template",
       renderer: renderer,
     });
 const toggle = () => {
@@ -37,10 +38,12 @@ const toggle = () => {
     projectsMobileMenuHeader.classList.toggle("projects__filter-mobile_open")
 }
 const toggleFilter = (e) => {
+
   const filter = e.target.dataset.filter;
     if (projectsMobileMenuHeader.dataset.filter !== filter){
     projectsMobileMenuHeader.dataset.filter = filter;
     projectsSwiper.renderItems(filter);
+    projectsSwiper.del();
     projectsSwiper.initSwiper();
     projectsMobileMenuHeader.textContent = e.target.textContent.toLocaleUpperCase();
     }
@@ -51,6 +54,5 @@ govProjects.addEventListener("click", toggleFilter);
 specPrograms.addEventListener("click", toggleFilter);
 inDevelopment.addEventListener("click", toggleFilter);
 allProjects.addEventListener("click", toggleFilter);
-
 projectsSwiper.renderItems(filter);
 projectsSwiper.initSwiper();

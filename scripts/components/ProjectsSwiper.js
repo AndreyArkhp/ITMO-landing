@@ -1,27 +1,29 @@
 import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js";
 
 export default class ProjectsSwiper {
-  constructor({ cardDataProjects, swiperSelector, wrapperSelector, renderer }) {
+  constructor({ cardDataProjects, swiperSelector, wrapperSelector, templateSelector, renderer }) {
     this._cardData = cardDataProjects;
     this._swiperSelector = swiperSelector;
     this._wrapperSelector = wrapperSelector;
+    this._templateSelector = templateSelector;
     this._wrapperElement = document.querySelector(wrapperSelector);
     this._renderer = renderer;
   }
 
   renderItems(filter) {
     this._wrapperElement.innerHTML = "";
-    !filter && (filter = "");
     this._cardData.forEach((card) => {
-      if (!filter || card.filter.indexOf(filter) != -1) {
-        const cardElement = this._renderer(card);
+      if ((filter === "all") || card.filter.indexOf(filter) != -1) {
+        const cardElement = this._renderer(card, this._templateSelector);
         this._wrapperElement.append(cardElement);
       }
     });
   }
-
-  initSwiper() {
-    const swiper = new Swiper(this._swiperSelector, {
+  del() {
+    this.swiper.destroy(true, true);
+  }
+  initSwiper = () => {
+    this.swiper = new Swiper(this._swiperSelector, {
       speed: 400,
       spaceBetween: 8,
       slidesPerView: 2,
