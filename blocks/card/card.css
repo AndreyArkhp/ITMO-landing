@@ -1,0 +1,130 @@
+
+.card{
+    display: grid;
+    grid-gap: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card__title{
+    margin: 0;
+    padding: 0;
+    max-height: 28px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.0588372px;
+}
+
+.card__icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 36px;
+    background: #FFFFFF;
+    z-index: 2;
+    box-shadow: 0px 2.24314px 11.2157px rgba(1, 54, 157, 0.15);
+}
+
+.card__icon{
+    display: block;
+    width: 19.43px;
+    height: 19.43px;
+    background: #FFFFFF;
+    border-radius: 36px;
+    margin: 0 auto;
+}
+
+.card__text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #001337;
+}
+
+.card__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5.60784px 4.48627px;
+    width: 120px;
+    height: 32px;
+    margin: 0 auto;
+    border: 1px solid #001337;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.0588372px;
+    background: transparent;
+    color: #001337;
+}
+
+
+@media screen and (min-width: 468px) {
+    .card__title{
+        z-index: 2;
+    }
+
+    .card__text{
+        z-index: 2;
+    }
+
+    .card__button{
+        z-index: 2;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .card{
+        gap: 50px;
+        padding: 30px 20px;
+    }
+
+    .card__title{
+        max-height: 60px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.66;
+        min-height: 60px;
+    }
+
+    .card__icon-box{
+        width: 70px;
+        height: 70px;
+    }
+
+    .card__icon{
+        width: 34px;
+        height: 34px;
+    }
+
+    .card__text{
+        font-size: 14px;
+        line-height: 1.428;
+    }
+
+    .card__button{
+        width: 215px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 1.35;
+    }
+}
