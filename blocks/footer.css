@@ -1,0 +1,60 @@
+.footer {
+    background-color: #001337;
+    color: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+    display: grid;
+    padding: 40px 16px 33px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "footer__logo footer__info"
+    "footer__column_type_about footer__column_type_education"
+    "footer__contacts footer__contacts"
+    "footer__social footer__social"
+    "footer__copyright footer__copyright"
+;
+}
+.footer__logo{
+    grid-area: footer__logo;
+    width: 98px;
+    height: 33px;
+}
+.footer__info{
+    margin: 0;
+    grid-area: footer__info;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+}
+.footer__column{
+
+}
+.footer__column_type_about{
+    grid-area: footer__column_type_about;
+}
+.footer__column_type_education{
+    grid-area: footer__column_type_education;
+}
+.footer__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.0588372px;
+}
+.footer__list-item{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.1px;
+
+}
+.footer__contacts{
+    grid-area: footer__contacts;
+}
+.footer__social{
+    grid-area: footer__social;
+}
+.footer__copyright{
+    grid-area: footer__copyright;
+}
