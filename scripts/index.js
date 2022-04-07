@@ -16,7 +16,8 @@ const publicationsSwiper = new PublicationsSwiper({
       data: card,
       templateSelector: "#publications_card_template",
     });
-    return cardObject.generate();
+    const cardElement =  cardObject.generate();
+    return cardElement;
   },
 });
 

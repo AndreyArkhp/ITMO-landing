@@ -13,10 +13,11 @@ export default class PublicationsSwiper {
     }
 
     renderItems() {
-        console.log(this._wrapperSelector);
         this._cardData.forEach(card => {
+            const renderEvent = new Event("render");
             const cardElement = this._renderer(card);
             this._wrapperElement.append(cardElement);
+            cardElement.dispatchEvent(renderEvent);
         });
     }
 
@@ -68,34 +69,36 @@ export default class PublicationsSwiper {
             pagination: {
                 el: ".publications__pagination",
                 clickable: true,
-                dynamicBullets: true,
-                dynamicMainBullets: 1,
             },
             navigation: {
                 prevEl: ".publications__swiper-button_type_back",
-                nextEl: ".publications__swiper-button_type_next",
+                nextEl: ".publications__swiper-button_type_forward",
             }
         });
     }
 
     _handleBreakpoints() {
         if(this._desktopBreakpoint.matches) {
-            this._tabletSwiper.destroy(true, true);
-            this._mobileSwiper.destroy(true, true);
-            if(this._desktopSwiper.destroyed) {
+            this._tabletSwiper && this._tabletSwiper.destroy(true, true);
+            this._mobileSwiper && this._mobileSwiper.destroy(true, true);
+            if(!this._desktopSwiper || this._desktopSwiper.destroyed) {
                 this._desktopSwiper = this._initDesktopSwiper();
+                this._desktopSwiper.pagination.update();
             }
         } else if(this._tabletBreakpoint.matches) {
-            this._desktopSwiper.destroy(true, true);
-            this._mobileSwiper.destroy(true, true);
-            if(this._tabletSwiper.destroyed) {
-                this._tabletSwiper = this._initTabletSwiper();
+            this._desktopSwiper && this._desktopSwiper.destroy(true, true);
+            this._mobileSwiper && this._mobileSwiper.destroy(true, true);
+            if(!this._tabletSwiper || this._tabletSwiper.destroyed) {
+                this._tabletSwiper = this._initTabletSwiper(true, true);
+                this._tabletSwiper.pagination.update();
+
             }
         } else {
-            this._desktopSwiper.destroy(true, true);
-            this._tabletSwiper.destroy(true, true);
-            if(this._mobileSwiper.destroyed) {
-                this._mobileSwiper = this._initMobileSwiper();
+            this._desktopSwiper && this._desktopSwiper.destroy(true, true);
+            this._tabletSwiper && this._tabletSwiper.destroy(true, true);
+            if(!this._mobileSwiper && this._mobileSwiper.destroyed) {
+                this._mobileSwiper = this._initMobileSwiper(true, true);
+                this._mobileSwiper.pagination.update();
             }
         }
     }
@@ -108,12 +111,12 @@ export default class PublicationsSwiper {
     }
 
     initSwiper() {
-        this._mobileSwiper = this._initMobileSwiper();
-        this._mobileSwiper.destroy(true, true);
-        this._tabletSwiper = this._initTabletSwiper();
-        this._tabletSwiper.destroy(true, true);
-        this._desktopSwiper = this._initDesktopSwiper();
-        this._desktopSwiper.destroy(true, true);
+        // this._desktopSwiper = this._initDesktopSwiper();
+        // this._desktopSwiper.destroy();
+        // this._tabletSwiper = this._initTabletSwiper();
+        // this._tabletSwiper.destroy();
+        // this._mobileSwiper = this._initMobileSwiper();
+        // this._mobileSwiper.destroy();
         this._setEventListeners();
         this._handleBreakpoints();
     }
