@@ -19,38 +19,31 @@ export default class TeamSwiper {
   }
   initSwiper = () => {
     this.swiper = new Swiper(this._swiperSelector, {
-      speed: 400,
+      speed: 200,
+      loop: true,
       spaceBetween: 8,
-      slidesPerView: 3,
+      slidesPerView: 2.22,
       slidesPerGroup: 1,
       effect: "slide",
-    //   pagination: {
-    //     el: ".projects__pagination",
-    //     clickable: true,
-    //     type: "fraction",
-    //   },
-      grid: {
-        fill: 'row',
-        rows: 2,
-    },
+      slidesOffsetBefore: 15,
     pagination: {
         el: ".team__pagination",
         clickable: true,
         dynamicBullets: true,
         dynamicMainBullets: 1,
     },
-      breakpoints: {
-        319: {
-          spaceBetween: 8,
-          slidesPerView: 3,
-        },
-      },
-      breakpoints: {
-        768: {
-          spaceBetween: 30,
-          slidesPerView: 4,
-        },
-      },
+    //   breakpoints: {
+    //     319: {
+    //       spaceBetween: 8,
+    //       slidesPerView: 2,
+    //     },
+    //   },
+    //   breakpoints: {
+    //     768: {
+    //       spaceBetween: 30,
+    //       slidesPerView: 2,
+    //     },
+    //   },
     });
   }
 }

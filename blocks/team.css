@@ -3,6 +3,7 @@
     font-family: "Open Sans", Arial, sans-serif;
     padding: 40px 0 0;
     color:#FFFFFF;
+    min-width: 320px;
 }
 
 .team__heading {
@@ -14,16 +15,27 @@
     color: inherit;
     margin: 0 0 20px;
 }
-
+.team__swiper-container {
+    justify-content: center;
+    padding: 0;
+    width: 320px;
+    margin: 0 auto;
+}
 .team__swiper {
     padding-bottom: 32px;
+    padding: 0;
+    width: 320px;
+    margin: 0 auto;
 }
 
 
 .team__cards {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    width: 320px;
+    height: 294px;
+    margin: 0 auto;
+    overflow: visible;
+    
 }
 
 .team__item {
@@ -64,7 +76,7 @@
     transform: none;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
 
     .team {
         padding: 60px 0 0;
@@ -98,4 +110,4 @@
         width: 8px;
         height: 8px;
     }
-}
+} */

@@ -16,7 +16,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1px;
   color: #FFFFFF;
-  height: 68px;
+  height: 58px;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -55,7 +55,7 @@
   list-style-type: none;
   margin: 0;
   padding: 16px 0;
-  height: 318px;
+  height: 328px;
   box-sizing: border-box;
 }
 .projects__filter-block-list_close {
@@ -63,8 +63,16 @@ opacity: 0;
 transition: 500ms;
 overflow: hidden;
 }
+.projects__filter {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138%;
+}
 .projects__filter-mobile{
-  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 171%;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   height: 44px;
@@ -73,13 +81,15 @@ overflow: hidden;
 justify-content: center;
 }
 .projects__filter-mobile_allProjects-header{
+  font-weight: 600;
+  line-height: 16px;
   font-size: 12px;
-border-bottom: 2px solid #009FAC;
-background: no-repeat;
-background-position-x: 95%;
-background-position-y: 50%;
-transition: 400ms ;
-background-image: url(../images/icons/arrow-down.svg);
+  border-bottom: 2px solid #009FAC;
+  background: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+  transition: 400ms ;
+  background-image: url(../images/icons/arrow-down.svg);
 }
 .projects__filter-mobile_open{
 transition: 350ms;
@@ -111,12 +121,6 @@ display: none;
 }
 }
 
-.projects__filter {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 138%;
-}
 /* @media screen and (min-width: 480px) {
   .projects__filter  {
     font-size: 25px;
@@ -132,7 +136,7 @@ display: none;
 }
 .projects__swiper {
     width: 288px;
-    height: 258px;
+    height: 268px;
     margin: 20px auto 40px;
     padding: 0;
     color: #FFFFFF;
@@ -156,7 +160,7 @@ display: none;
 .projects__pagination {
   bottom: 0;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 167%;
   letter-spacing: 0.1px;
 }
@@ -166,7 +170,7 @@ width: 200px;
 .swiper-pagination-current{
  border-bottom: #009FAC 2px solid;
  font-weight: 400;
- font-size: 18px;
+ font-size: 12px;
  line-height: 167%;
  letter-spacing: 0.1px;
 }
@@ -187,10 +191,10 @@ width: 200px;
 .projects__button-next{
   background-color: rgba(0, 159, 172, 0.2);
   border-radius: 50%;
-  top: 97%;
+  top: 100%;
   left: 62%;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   background-size: cover;
   background-image: url(../images/icons/arrow-right.svg);
 }
@@ -204,10 +208,10 @@ width: 200px;
   cursor: pointer;
   background-color: rgba(0, 159, 172, 0.2);
   border-radius: 50%;
-  top: 97%;
-  left: 25%;
-  height: 30px;
-  width: 30px;
+  top: 100%;
+  left: 30%;
+  height: 20px;
+  width: 20px;
   background-size: cover;
   background-image: url(../images/icons/arrow-left.svg);
 }
