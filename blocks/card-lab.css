@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border-radius: 5px;
   background-color: #ffffff;
+  background-size: cover;
   transition: background-color 0.1s linear;
   color: #001337;
   cursor: pointer;
@@ -19,12 +20,12 @@
 .card-lab_active .card-lab__link {
   border: none;
   color: #009fac;
+  background-color: #ffffff;
 }
 
 .card-lab__title {
   margin: 0;
   padding: 0;
-  max-height: 28px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -85,7 +86,7 @@
   letter-spacing: 0.0588372px;
   text-decoration: none;
   color: inherit;
-  background-color: #ffffff;
+  background-color: inherit;
 }
 
 @media screen and (min-width: 767px) {
@@ -108,5 +109,80 @@
   }
   .card-lab__link {
     width: 126.5px;
+  }
+  .card-lab_theme_project {
+    background-image: url("../images/Lab/Project.png");
+  }
+  .card-lab_theme_machine-learning {
+    background-image: url("../images/Lab/Machine\ learning.png");
+  }
+  .card-lab_theme_data {
+    background-image: url("../images/Lab/Data.png");
+  }
+  .card-lab_theme_robot {
+    background-image: url("../images/Lab/Robot.png");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-lab {
+    gap: 35px;
+    padding: 20px 16px;
+    border-radius: 10px;
+    transition: transform 0.1s linear;
+  }
+  .card-lab:hover {
+    transform: translateY(-10px);
+    background-color: #009fac;
+    color: #ffffff;
+  }
+  .card-lab:hover .card-lab__link {
+    border-color: #ffffff;
+  }
+  .card-lab__title {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .card-lab__icon-box {
+    width: 45px;
+    height: 45px;
+  }
+  .card-lab__text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .card-lab__link {
+    width: 136px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .card-lab {
+    gap: 50px;
+    padding: 30px 20px 20px;
+    border-radius: 10px;
+    transition: transform 0.1s linear;
+  }
+  .card-lab__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .card-lab__icon-box {
+    width: 70px;
+    height: 70px;
+  }
+  .card-lab__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .card-lab__link {
+    width: 215px;
+    font-size: 14px;
+    line-height: 19px;
+    min-height: 40px;
+  }
+  .card-lab__icon {
+    width: 34px;
+    height: 34px;
   }
 }
