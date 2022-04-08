@@ -1,0 +1,88 @@
+.card-lab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: background-color 0.1s linear;
+  color: #001337;
+}
+
+.card-lab_active {
+  background-color: #009fac;
+  color: #ffffff;
+}
+
+.card-lab_active .card-lab__link {
+  border: none;
+  color: #009fac;
+}
+
+.card-lab__title {
+  margin: 0;
+  padding: 0;
+  max-height: 28px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.0588372px;
+}
+
+.card-lab__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 36px;
+  background: #ffffff;
+  z-index: 2;
+  box-shadow: 0px 2.24314px 11.2157px rgba(1, 54, 157, 0.15);
+}
+
+.card-lab__icon {
+  display: block;
+  width: 19.43px;
+  height: 19.43px;
+  background: #ffffff;
+  border-radius: 36px;
+  margin: 0 auto;
+}
+
+.card-lab__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.card-lab__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  min-height: 32px;
+  margin: 0 auto;
+  border: 1px solid #001337;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.0588372px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #ffffff;
+}
