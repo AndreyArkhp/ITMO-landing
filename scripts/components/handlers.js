@@ -8,8 +8,10 @@ import {
 } from "./Header.js";
 
 import { handleClickCard, cards } from "./researchlab.js";
+import { form, handlerSubmit } from "./form.js";
 
 import { handleBtnClick, studyBtns } from "./study.js";
+import { form, handlerSubmit } from "./form.js";
 
 function setEventListener() {
   btnCloseMenu.addEventListener("click", handleClickCloseMenu);
@@ -21,6 +23,7 @@ function setEventListener() {
   studyBtns.forEach((btn) => {
     btn.addEventListener("click", handleBtnClick);
   });
+  form.addEventListener("submit", handlerSubmit);
 }
 
 export default setEventListener;

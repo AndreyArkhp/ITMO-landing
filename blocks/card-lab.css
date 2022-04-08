@@ -8,6 +8,7 @@
   background-color: #ffffff;
   transition: background-color 0.1s linear;
   color: #001337;
+  cursor: pointer;
 }
 
 .card-lab_active {
@@ -85,4 +86,30 @@
   text-decoration: none;
   color: inherit;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 767px) {
+  .card-lab {
+    gap: 20px;
+    padding: 12px 11.75px;
+    transition: transform 0.1s linear;
+  }
+  .card-lab__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card-lab__icon-box {
+    width: 41.19px;
+    height: 41.19px;
+  }
+  .card-lab__text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .card-lab__link {
+    width: 126.5px;
+  }
+  .card-lab_active {
+    transform: translateY(-10px);
+  }
 }

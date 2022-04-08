@@ -203,12 +203,14 @@
           <div class="researchlab__text-box">
             <p class="researchlab__text">
               Центр национальной технологической инициативы (НТИ), получивший государственную
-              поддержку по направлению «Технологии машинного обучения и когнитивные технологии».
+              поддержку по&nbsp;направлению &laquo;Технологии машинного обучения и&nbsp;когнитивные
+              технологии&raquo;.
             </p>
             <p class="researchlab__text">
-              Мы изучаем проблемы и выявляем, когда мы работаем вместе с нашими клиентами, новые
-              решения находят, не задумываясь. Работая таким образом и проявляя гибкость, мы можем
-              поддерживать новый подход для удовлетворения потребностей наших клиентов.
+              Мы&nbsp;изучаем проблемы и&nbsp;выявляем, когда мы&nbsp;работаем вместе с&nbsp;нашими
+              клиентами, новые решения находят, не&nbsp;задумываясь. Работая таким образом
+              и&nbsp;проявляя гибкость, мы&nbsp;можем поддерживать новый подход для удовлетворения
+              потребностей наших клиентов.
             </p>
           </div>
 
@@ -333,8 +335,124 @@
           </div>
         </div>
       </section>
+      <section class="feedback">
+        <div class="feedback__container">
+          <h2 class="feedback__title">ВСЕГДА НА СВЯЗИ</h2>
+          <p class="feedback__text">
+            По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам,
+            написать на почту или оставтиь свое сообщение через форму обратной связи.
+          </p>
+          <form name="feedback" class="form">
+            <input
+              type="text"
+              class="form__element form__element_type_name"
+              placeholder="Имя"
+              name="name"
+              required
+            />
+            <input
+              type="text"
+              class="form__element form__element_type_surname"
+              placeholder="Фамилия"
+              name="surname"
+            />
+            <input
+              type="tel"
+              class="form__element form__element_type_phone"
+              placeholder="Телефон"
+              name="phone"
+            />
+            <input
+              type="email"
+              class="form__element form__element_type_email"
+              placeholder="E-mail"
+              name="email"
+              required
+            />
+            <textarea
+              name="message"
+              cols="30"
+              rows="7"
+              class="form__element form__element_type_message"
+              placeholder="Сообщение"
+              maxlength="250"
+            ></textarea>
+            <button type="submit" class="form__submit">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <img class="footer__logo" src="./images/Header/logo.svg" alt="Лого" />
+      <p class="footer__info">Информация &copy;&nbsp;2020 Университет ИТМО</p>
+      <div class="footer__column footer__column_type_about">
+        <h4 class="footer__title">О центре</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Главная</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Команда</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Лаборатория</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__column footer__column_type_education">
+        <h4 class="footer__title">Развитие</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Образование</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Аспирантура</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Магистратура</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Публикации</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Проекты</a></li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <p class="footer__city">г.Санкт-Петербург</p>
+        <address class="footer__address">199034, Санкт-Петербург,</address>
+        <address class="footer__address">Биржевая линия, д. 4, лит. М, ауд. 302С</address>
+        <a href="tel:+78123376490" class="footer__tel">+7 (812) 337-64-90</a>
+        <a href="tel:+78123376494" class="footer__tel">+7 (812) 337-64-94</a>
+        <address class="footer__address">
+          <a href="mailto:anna.lutsenko@itmo.ru" class="footer__email">anna.lutsenko@itmo.ru</a>
+        </address>
+      </div>
+      <ul class="footer__social">
+        <li>
+          <a href="#"
+            ><img class="footer__social-icon" src="./images/icons/vk.svg" alt="Иконка ВКонтакте"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="footer__social-icon"
+              src="./images/icons/facebook.svg"
+              alt="Иконка Фейсбук"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="footer__social-icon"
+              src="./images/icons/telegram.svg"
+              alt="Иконка Телеграмм"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="footer__social-icon"
+              src="./images/icons/insta.svg"
+              alt="Иконка Инстаграмм"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img class="footer__social-icon" src="./images/icons/youtube.svg" alt="Иконка Ютьюб"
+          /></a>
+        </li>
+      </ul>
+      <p class="footer__copyright">Сделано студентами Яндекс. Практикума</p>
+    </footer>
     <template id="publications_card_template">
       <li class="swiper-slide publications__item">
         <article class="publications-card">
