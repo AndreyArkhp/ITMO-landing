@@ -5,8 +5,6 @@ import { studyBtns, handleBtnClick } from "./components/study.js";
 import setEventListener from "./components/handlers.js";
 import { publicationsData } from "./utils/data.js";
 
-studyBtns.forEach((btn) => btn.addEventListener("click", handleBtnClick));
-
 const publicationsSwiper = new PublicationsSwiper({
   cardData: publicationsData,
   swiperSelector: ".publications__swiper",
