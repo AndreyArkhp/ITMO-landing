@@ -1,5 +1,5 @@
 .team {
-    background-color: rgba(0, 19, 55, 1);
+    background: linear-gradient(#E0F0FF 57%, #001337 43%);
     font-family: "Open Sans", Arial, sans-serif;
     padding: 40px 0 0;
     color:#FFFFFF;
@@ -12,8 +12,8 @@
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
-    color: inherit;
     margin: 0 0 20px;
+    color: #000D26;
 }
 .team__swiper-container {
     justify-content: center;
@@ -46,16 +46,15 @@
 
 
 .team__pagination.swiper-pagination {
-    bottom: 14px;
+    bottom: 17px;
 }
 
 .team__pagination > .swiper-pagination-bullet {
-    width: 4px;
-    height: 4px;
-    background-color: #000d26;
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF;
     opacity: .5;
 }
-
 .team__pagination > .swiper-pagination-bullet-active {
     opacity: 1;
 }

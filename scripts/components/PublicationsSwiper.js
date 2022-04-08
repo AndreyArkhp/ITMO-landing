@@ -12,7 +12,6 @@ export default class PublicationsSwiper {
     }
 
     renderItems() {
-        console.log(this._wrapperSelector);
         this._cardData.forEach(card => {
             const cardElement = this._renderer(card);
             this._wrapperElement.append(cardElement);
@@ -56,7 +55,6 @@ export default class PublicationsSwiper {
 
     _handleBreakpoints() {
         if(this._tabletBreakpoint.matches) {
-            console.log(this._tabletSwiper);
             this._mobileSwiper.destroy(true, true);
             if(this._tabletSwiper.destroyed) {
                 this._tabletSwiper = this._initTabletSwiper();

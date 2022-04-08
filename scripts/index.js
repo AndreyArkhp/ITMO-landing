@@ -27,7 +27,6 @@ const renderer = (card, templateSelector, cardPattern) => {
         data: card,
         templateSelector: templateSelector,
     });
-    console.log(cardObject);
     return cardObject.generate();
 }
 const filter = projectsMobileMenuHeader.dataset.filter;
