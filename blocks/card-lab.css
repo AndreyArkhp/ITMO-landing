@@ -109,7 +109,4 @@
   .card-lab__link {
     width: 126.5px;
   }
-  .card-lab_active {
-    transform: translateY(-10px);
-  }
 }
