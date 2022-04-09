@@ -1,0 +1,98 @@
+.projects-card {  /* li */
+    font-family: "Open Sans", Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: background-color, 159ms;
+    background: #009FAC;
+    background-image: url(../images/Projects/backgroundWorkspace.png);
+    border-radius: 5px;
+    width: 140px;
+    height: 220px;
+    justify-content: space-between;
+}
+.projects-card:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgba(224, 240, 255, 1);
+    box-shadow: 0px 10px 20px -5px rgba(0, 159, 172, 0.85);
+}
+.projects-card:hover .projects-card__image{
+    transition: 150ms;
+    filter: invert(1);
+} 
+/* @media screen and (min-width: 480px) {
+    .projects-card  {
+      width: 220px;
+      height: 345px;
+    }
+    } */
+    /* @media screen and (min-width: 480px) {
+        .projects-card  {
+        width: 220px;
+        height: 345px;
+      }
+      }
+      @media screen and (min-width: 560px) {
+        .projects-card  {
+          width: 260px;
+          height: 408px;
+        }
+        } */
+@media screen and (min-width: 768px) {
+    .projects-card {
+        background: #c51e1e;
+        height: 280px;
+        border-radius: 10px;
+    }
+  }
+
+.projects-card__image {
+    height: 26px;
+    margin: 12px auto 0 10px;
+}
+
+.projects-card__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136%;
+    letter-spacing: 0.1px;
+    margin: 8px 8px 0;
+    color: inherit;
+    width: 120px;
+    min-height: 103px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:normal;
+}
+
+.projects-card__actions {
+    background-color: #009fac;
+    margin: 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 18px 0 16px;
+}
+
+.projects-card__link {
+    justify-self: flex-end;
+    font-size: 10px;
+    line-height: 136%;
+    color: inherit;
+    font-weight: 600;
+    margin: 8px auto 12px 10px;
+}
+
+.projects-card__link:hover {
+    text-decoration: underline;
+}
+
+
+
+
