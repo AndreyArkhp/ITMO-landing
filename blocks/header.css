@@ -18,6 +18,15 @@
   padding-inline-end: 38px;
 }
 
+.header__control-acordion {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 16px;
+  background: transparent;
+  color: inherit;
+}
+
 .header__logo_menu_open {
   margin: 10px auto 10px 16px;
 }
@@ -43,7 +52,8 @@
   background: #000d26;
   height: 0;
   overflow: hidden;
-  transition: height 0.1s linear;
+  transition: height 0.2s ease-out;
+  will-change: contents;
 }
 
 .header__menu_active {
@@ -64,13 +74,15 @@
 
 .header__nested-list {
   max-height: 0;
-  transition: max-height 0.3s linear;
+  transition: max-height 0.3s ease-out, opacity 0.1s ease-out;
   margin: 0;
-  overflow: hidden;
+  opacity: 0;
+  will-change: contents;
 }
 
 .header__nested-list_opened {
-  max-height: 150px;
+  transition: max-height 0.3s ease-out, opacity 0.4s ease-out;
+  opacity: 1;
 }
 
 .header__menu-item {
