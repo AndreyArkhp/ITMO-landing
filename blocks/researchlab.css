@@ -91,7 +91,7 @@
     margin-block-end: 20px;
   }
   .researchlab__image:nth-child(2) {
-    content: url("../images/Lab/lab-w330.png");
+    content: url("../images/lab/lab-w330.png");
   }
   .researchlab__title {
     font-size: 24px;
@@ -157,7 +157,7 @@
     line-height: 26px;
   }
   .researchlab__text:nth-child(2)::before {
-    content: url("../images/Lab/atom.svg");
+    content: url("../images/lab/atom.svg");
     position: absolute;
     top: 0;
     left: -36px;
@@ -166,7 +166,7 @@
     object-fit: contain;
   }
   .researchlab__image:nth-child(2) {
-    content: url("../images/Lab/lab-w264.png");
+    content: url("../images/lab/lab-w264.png");
   }
   .researchlab__image_type_desktop {
     display: inline-block;

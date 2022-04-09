@@ -7,7 +7,6 @@
   border-radius: 5px;
   background-color: #ffffff;
   background-size: cover;
-  transition: background-color 0.1s linear;
   color: #001337;
   cursor: pointer;
   transition: transform 0.1s linear;
@@ -28,7 +27,7 @@
 .card-lab__title {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 10px;
@@ -47,7 +46,7 @@
   border-radius: 36px;
   background: #ffffff;
   z-index: 2;
-  box-shadow: 0px 2.24314px 11.2157px rgba(1, 54, 157, 0.15);
+  box-shadow: 0 2.24314px 11.2157px rgba(1, 54, 157, 0.15);
 }
 
 .card-lab__icon {
@@ -58,7 +57,7 @@
 .card-lab__text {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -109,16 +108,16 @@
     width: 126.5px;
   }
   .card-lab_theme_project {
-    background-image: url("../images/Lab/Project.png");
+    background-image: url("../images/lab/project.png");
   }
   .card-lab_theme_machine-learning {
-    background-image: url("../images/Lab/Machine\ learning.png");
+    background-image: url("../images/lab/machine-learning.png");
   }
   .card-lab_theme_data {
-    background-image: url("../images/Lab/Data.png");
+    background-image: url("../images/lab/data.png");
   }
   .card-lab_theme_robot {
-    background-image: url("../images/Lab/Robot.png");
+    background-image: url("../images/lab/robot.png");
   }
 }
 
