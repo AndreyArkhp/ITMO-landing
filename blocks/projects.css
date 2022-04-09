@@ -3,7 +3,7 @@
     flex-direction: column;
   background-color: #001337;
   font-family: "Open Sans", Arial, sans-serif;
-  padding: 40px 16px 20px 16px;
+  padding: 37px 16px 18px 16px;
   box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1px;
   color: #FFFFFF;
-  height: 58px;
+  height: 52px;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -55,7 +55,7 @@
   list-style-type: none;
   margin: 0;
   padding: 16px 0;
-  height: 328px;
+  height: 347px;
   box-sizing: border-box;
 }
 .projects__filter-block-list_close {
@@ -75,7 +75,7 @@ overflow: hidden;
   font-size: 14px;
   margin: 0;
   padding: 0;
-  height: 44px;
+  height: 37px;
   display: flex;
   flex-direction: column;
 justify-content: center;
@@ -136,8 +136,8 @@ display: none;
 }
 .projects__swiper {
     width: 288px;
-    height: 268px;
-    margin: 20px auto 40px;
+    height: 302px;
+    margin: 20px auto 25px;
     padding: 0;
     color: #FFFFFF;
   }
