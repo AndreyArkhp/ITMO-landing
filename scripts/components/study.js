@@ -1,6 +1,12 @@
 export const studyBtns = document.querySelectorAll(".study__option");
 const studyCards = document.querySelectorAll(".study__card");
-export function handleBtnClick() {
-  studyBtns.forEach((btn) => btn.classList.toggle("study__option_active"));
-  studyCards.forEach((card) => card.classList.toggle("study__card_active"));
+const stateCard = {
+  type: "magistracy",
+};
+export function handleBtnClick(type) {
+  if (type !== stateCard.type || type === undefined) {
+    studyBtns.forEach((btn) => btn.classList.toggle("study__option_active"));
+    studyCards.forEach((card) => card.classList.toggle("study__card_active"));
+    stateCard.type = type;
+  }
 }

@@ -5,6 +5,8 @@ import {
   handleClickOpenMenu,
   linkContainer,
   openLinkContainer,
+  magistracyBtn,
+  graduateBtn,
 } from "./Header.js";
 
 import { handleClickCard, containerCards } from "./researchlab.js";
@@ -21,6 +23,10 @@ function setEventListener() {
     btn.addEventListener("click", handleBtnClick);
   });
   form.addEventListener("submit", handlerSubmit);
+  magistracyBtn.addEventListener("click", () => {
+    handleBtnClick("magistracy");
+  });
+  graduateBtn.addEventListener("click", () => handleBtnClick("graduate"));
 }
 
 export default setEventListener;

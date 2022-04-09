@@ -1,10 +1,13 @@
 export const btnCloseMenu = document.querySelector(".header__close-icon");
 export const btnBurgerMenu = document.querySelector(".header__burger-menu");
 export const linkContainer = document.querySelector(".header__menu-item_type_container");
+export const magistracyBtn = document.querySelector("#magistracy-btn");
+export const graduateBtn = document.querySelector("#graduate-btn");
 const menu = document.querySelector(".header__menu");
 const logo = document.querySelector(".header__logo");
 const nestedList = document.querySelector(".header__nested-list");
 const menuItems = document.querySelectorAll(".header__menu-item");
+
 let isOpened = false;
 
 function unsetOpenedList() {
@@ -36,7 +39,9 @@ export function openLinkContainer() {
     nestedList.classList.add("header__nested-list_opened");
     nestedList.style.maxHeight = `${nestedList.scrollHeight}px`;
     menuItems.forEach((item) => {
-      item.classList.add("header__menu-item_type_dark");
+      if (!item.classList.contains("header__menu-item_type_ligth")) {
+        item.classList.add("header__menu-item_type_dark");
+      }
     });
     isOpened = true;
   } else {
