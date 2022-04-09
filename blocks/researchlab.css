@@ -59,26 +59,6 @@
 @media screen and (min-width: 608px) {
   .researchlab__container {
     grid-template-columns: repeat(4, 140px);
-  }
-  .researchlab__image-box {
-    grid-row: 2/3;
-    grid-column: 3/5;
-    margin: 0;
-  }
-  .researchlab__text-box {
-    grid-row: 2/3;
-    grid-column: 1/3;
-    margin: 14px 0 12px;
-  }
-
-  .researchlab__title {
-    grid-column: 1/5;
-  }
-}
-
-@media screen and (min-width: 608px) {
-  .researchlab__container {
-    grid-template-columns: repeat(4, 140px);
     margin: 0;
   }
   .researchlab__image-box {
@@ -96,6 +76,9 @@
   }
   .researchlab__title {
     grid-column: 1/5;
+  }
+  .researchlab__image {
+    object-fit: contain;
   }
 }
 @media screen and (min-width: 767px) {
