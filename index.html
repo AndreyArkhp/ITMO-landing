@@ -11,7 +11,6 @@
       <div class="header__content">
         <button class="header__burger-menu"></button>
         <img src="./images/Header/logo.svg" alt="Логотип" class="header__logo" />
-
         <button class="header__close-icon"></button>
       </div>
       <nav class="header__menu">
@@ -45,6 +44,14 @@
       </nav>
     </header>
     <main class="main">
+      <section class="technologies">
+        <div class="technologies__container">
+          <h1 class="technologies__title">Когнитивные технологии,</h1>
+          <h2 class="technologies__subtitle">машинное обучение</h2>
+          <p class="technologies__text">Системы прикладного искусственного интеллекта</p>
+          <a href="#" class="technologies__link">Наши проекты</a>
+        </div>
+      </section>
       <section class="about">
         <div class="about__container">
           <h2 class="about__title">Несколько слов о нас</h2>
@@ -174,7 +181,6 @@
                 </p>
               </li>
             </ul>
-
             <ul class="about__pagination swiper-pagination"></ul>
           </div>
         </div>
@@ -243,6 +249,58 @@
           </div>
         </div>
       </section>
+      <section class="projects">
+        <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
+        <div class="projects__filter-block-mobile">
+          <h3
+            class="projects__filter projects__filter-mobile projects__filter-mobile_allProjects-header projects__filter_action"
+            data-filter="all"
+          >
+            ВСЕ ПРОЕКТЫ
+          </h3>
+          <ul class="projects__filter-block-list disabled">
+            <li>
+              <h3 class="projects__filter-mobile projects__filter_allProjects" data-filter="all">
+                Все проекты
+              </h3>
+            </li>
+            <li>
+              <h3 class="projects__filter-mobile projects__filter_govProjects" data-filter="gov">
+                Гос. проекты
+              </h3>
+            </li>
+            <li>
+              <h3 class="projects__filter-mobile projects__filter_specPrograms" data-filter="spec">
+                Спецпрограммы
+              </h3>
+            </li>
+            <li>
+              <h3
+                class="projects__filter-mobile projects__filter_inDevelopment"
+                data-filter="inDev"
+              >
+                В разработке
+              </h3>
+            </li>
+          </ul>
+        </div>
+        <ul class="projects__filter-block">
+          <li>
+            <h3 class="projects__filter projects__filter_allProjects projects__filter_action">
+              ВСЕ ПРОЕКТЫ
+            </h3>
+          </li>
+          <li><h3 class="projects__filter projects__filter_govProjects">ГОС. ПРОЕКТЫ</h3></li>
+          <li><h3 class="projects__filter projects__filter_specPrograms">СПЕЦПРОГРАММЫ</h3></li>
+          <li><h3 class="projects__filter projects__filter_inDevelopment">В РАЗРАБОТКЕ</h3></li>
+        </ul>
+        <div class="swiper projects__swiper">
+          <ul class="swiper-wrapper projects__cards"></ul>
+          <div class="swiper-pagination projects__pagination"></div>
+          <div class="swiper-button-prev projects__button-prev"></div>
+          <div class="swiper-button-next projects__button-next"></div>
+        </div>
+      </section>
       <section class="publications">
         <h2 class="publications__heading">Публикации</h2>
         <div class="publications__swiper-container">
@@ -254,17 +312,184 @@
           <button class="publications__swiper-button publications__swiper-button_type_forward"></button>
           <div class="publications-share publications__share-container">
             <ul class="publications-share__items">
-              <li><a href="#"><img src="images/icons/vk.svg" alt="иконка VK"></a></li>
-              <li><a href="#"><img src="images/icons/facebook.svg" alt="иконка Facebook"></a></li>
-              <li><a href="#"><img src="images/icons/telegram.svg" alt="иконка Telegram"></a></li>
-              <li><a href="#"><img src="images/icons/insta.svg" alt="иконка Instagram"></a></li>
-              <li><a href="#"><img src="images/icons/youtube.svg" alt="иконка Youtube"></a></li>
+              <li><a href="#"><img src="./images/icons/vk-blue.svg" alt="иконка VK"></a></li>
+              <li><a href="#"><img src="./images/icons/facebook-blue.svg" alt="иконка Facebook"></a></li>
+              <li><a href="#"><img src="./images/icons/telegram-blue.svg" alt="иконка Telegram"></a></li>
+              <li><a href="#"><img src="./images/icons/insta-blue.svg" alt="иконка Instagram"></a></li>
+              <li><a href="#"><img src="./images/icons/youtube-blue.svg" alt="иконка Youtube"></a></li>
             </ul>
           </div>
         </div>
       </section>
+      <section class="team">
+        <h2 class="team__heading">Наша команда</h2>
+        <div class="team__swiper-container">
+          <div class="swiper team__swiper">
+            <ul class="swiper-wrapper team__cards"></ul>
+            <div class="team__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <h2 class="partners__heading">C КЕМ МЫ РАБОТАЕМ</h2>
+        <p class="partners__preamble">
+          <span>
+            За время сотрудничества компания показала себя как надежный партнер, способный
+            оперативно решать вопросы по внесению необходимых изменений.
+          </span>
+          <span>
+            Отдельно хочется отметить квалифицированный персонал компании, который всегда готов
+            прийти на помощь в решении поставленных задач, дать объективную оценку и свои
+            рекомендации по улучшению деятельности. Надеемся на дальнейшее и плодотворное
+            сотрудничество.
+          </span>
+        </p>
+        <ul class="partners__company-list">
+          <li class="partners__company">
+            <img
+              class="partners__image"
+              alt="логотип компании"
+              src="./images/Projects/GP_logo.svg"
+            />
+          </li>
+          <li class="partners__company">
+            <img
+              class="partners__image"
+              alt="логотип компании"
+              src="./images/Projects/GP_logo.svg"
+            />
+          </li>
+          <li class="partners__company">
+            <img
+              class="partners__image"
+              alt="логотип компании"
+              src="./images/Projects/GP_logo.svg"
+            />
+          </li>
+          <li class="partners__company">
+            <img
+              class="partners__image"
+              alt="логотип компании"
+              src="./images/Projects/GP_logo.svg"
+            />
+          </li>
+          <li class="partners__company">
+            <img
+              class="partners__image"
+              alt="логотип компании"
+              src="./images/Projects/GP_logo.svg"
+            />
+          </li>
+          <li class="partners__company">
+            <img
+              class="partners__image"
+              alt="логотип компании"
+              src="./images/Projects/GP_logo.svg"
+            />
+          </li>
+          <li class="partners__company">
+            <img
+              class="partners__image"
+              alt="логотип компании"
+              src="./images/Projects/GP_logo.svg"
+            />
+          </li>
+          <li class="partners__company">
+            <img
+              class="partners__image"
+              alt="логотип компании"
+              src="./images/Projects/GP_logo.svg"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="feedback">
+        <div class="feedback__container">
+          <h2 class="feedback__title">ВСЕГДА НА СВЯЗИ</h2>
+          <p class="feedback__text">
+            По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам,
+            написать на почту или оставтиь свое сообщение через форму обратной связи.
+          </p>
+          <form name="feedback" class="form">
+            <input
+              type="text"
+              class="form__element form__element_type_name"
+              placeholder="Имя"
+              name="name"
+              required
+            />
+            <input
+              type="text"
+              class="form__element form__element_type_surname"
+              placeholder="Фамилия"
+              name="surname"
+            />
+            <input
+              type="tel"
+              class="form__element form__element_type_phone"
+              placeholder="Телефон"
+              name="phone"
+            />
+            <input
+              type="email"
+              class="form__element form__element_type_email"
+              placeholder="E-mail"
+              name="email"
+              required
+            />
+            <textarea
+              name="message"
+              cols="30"
+              rows="7"
+              class="form__element form__element_type_message"
+              placeholder="Сообщение"
+              maxlength="250"
+            ></textarea>
+            <button type="submit" class="form__submit">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <img class="footer__logo" src="./images/Header/logo.svg" alt="Лого">
+      <p class="footer__info">Информация &copy;&nbsp;2020 Университет ИТМО</p>
+      <div class="footer__column footer__column_type_about">
+        <h4 class="footer__title">О центре</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Главная</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Команда</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Лаборатория</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__column footer__column_type_education">
+        <h4 class="footer__title">Развитие</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Образование</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Аспирантура</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Магистратура</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Публикации</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Проекты</a></li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <p class="footer__city">г.Санкт-Петербург</p>
+        <address class="footer__address">199034, Санкт-Петербург,</address>
+        <address class="footer__address">  Биржевая линия, д. 4, лит. М, ауд. 302С</address>
+        <a href="tel:+78123376490" class="footer__tel">+7 (812) 337-64-90</a>
+        <a href="tel:+78123376494" class="footer__tel">+7 (812) 337-64-94</a>
+        <address class="footer__address"><a href="mailto:anna.lutsenko@itmo.ru" class="footer__email">anna.lutsenko@itmo.ru</a></address>
+      </div>
+      <ul class="footer__social">
+        <li><a href="#"><img class="footer__social-icon" src="./images/icons/vk.svg" alt="Иконка ВКонтакте"></a></li>
+        <li><a href="#"><img class="footer__social-icon" src="./images/icons/facebook.svg" alt="Иконка Фейсбук"></a></li>
+        <li><a href="#"><img class="footer__social-icon" src="./images/icons/telegram.svg" alt="Иконка Телеграмм"></a></li>
+        <li><a href="#"><img class="footer__social-icon" src="./images/icons/insta.svg" alt="Иконка Инстаграмм"></a></li>
+        <li><a href="#"><img class="footer__social-icon" src="./images/icons/youtube.svg" alt="Иконка Ютьюб"></a></li>
+      </ul>
+      <p class="footer__copyright">Сделано студентами Яндекс. Практикума</p>
+    </footer>
     <template id="publications_card_template">
       <li class="swiper-slide publications__item">
         <article class="publications-card">
@@ -278,17 +503,33 @@
             </div>
             <div class="publications-share publications-card__share-container">
               <ul class="publications-share__items">
-                <li><a href="#"><img src="images/icons/vk.svg" alt="иконка VK"></a></li>
-                <li><a href="#"><img src="images/icons/facebook.svg" alt="иконка Facebook"></a></li>
-                <li><a href="#"><img src="images/icons/telegram.svg" alt="иконка Telegram"></a></li>
-                <li><a href="#"><img src="images/icons/insta.svg" alt="иконка Instagram"></a></li>
-                <li><a href="#"><img src="images/icons/youtube.svg" alt="иконка Youtube"></a></li>
+                <li><a href="#"><img src="./images/icons/vk-blue.svg" alt="иконка VK"></a></li>
+                <li><a href="#"><img src="./images/icons/facebook-blue.svg" alt="иконка Facebook"></a></li>
+                <li><a href="#"><img src="./images/icons/telegram-blue.svg" alt="иконка Telegram"></a></li>
+                <li><a href="#"><img src="./images/icons/insta-blue.svg" alt="иконка Instagram"></a></li>
+                <li><a href="#"><img src="./images/icons/youtube-blue.svg" alt="иконка Youtube"></a></li>
               </ul>
             </div>
           </div>
         </article>
       </li>
     </template>
-    <script type="module" src="./scripts/index.js"></script>
+    <template id="projects_card_template">
+      <li class="swiper-slide projects-card">
+        <img class="projects-card__image" alt="логотип компании" src="" />
+        <p class="projects-card__text"></p>
+        <a class="projects-card__link" href="#">Подробнее</a>
+      </li>
+    </template>
+    <template id="team_card_template">
+      <li class="swiper-slide team-card">
+        <img class="team-card__image" alt="фото преподавателя" src="" />
+        <p class="team-card__FIO">
+          <span class="team-card__IO"></span>
+        </p>
+        <p class="team-card__post"></p>
+      </li>
+    </template>
+    <script type="module" src="scripts/index.js"></script>
   </body>
 </html>
