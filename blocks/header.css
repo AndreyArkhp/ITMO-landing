@@ -71,7 +71,6 @@
 
 .header__nested-list_opened {
   max-height: 150px;
-  transition: max-height 0.3s linear;
 }
 
 .header__menu-item {

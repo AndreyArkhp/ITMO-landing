@@ -11,7 +11,7 @@ import TeamSwiper from "/scripts/components/TeamSwiper.js";
 import { cardDataProjects } from "../data/cardDataProjects.js";
 import { cardDataTeam } from "../data/cardDataTeam.js";
 import { projectsMobileMenuHeader, projectsMobileMenuList, projectsSwiperBlock, allProjects, govProjects, specPrograms, inDevelopment } from "../utils/constants.js";
-studyBtns.forEach((btn) => btn.addEventListener("click", handleBtnClick));
+
 const publicationsSwiper = new PublicationsSwiper({cardData: publicationsData, swiperSelector: ".publications__swiper", wrapperSelector: ".publications__cards", renderer: card => {
         const cardObject = new PublicationsCard({data: card, templateSelector: "#publications_card_template"});
         return cardObject.generate();

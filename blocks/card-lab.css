@@ -1,0 +1,189 @@
+.card-lab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  color: #001337;
+  cursor: pointer;
+  transition: transform .3s linear,
+    background-color .3s linear;
+}
+
+.card-lab_active {
+  background-color: #009fac;
+  color: #ffffff;
+  transform: translateY(-10px);
+}
+
+.card-lab_active .card-lab__link {
+  border: none;
+  color: #009fac;
+  background-color: #ffffff;
+}
+
+.card-lab__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.0588372px;
+}
+
+.card-lab__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 36px;
+  background: #ffffff;
+  z-index: 2;
+  box-shadow: 0 2.24314px 11.2157px rgba(1, 54, 157, 0.15);
+}
+
+.card-lab__icon {
+  width: 19.43px;
+  height: 19.43px;
+}
+
+.card-lab__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.card-lab__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  min-height: 32px;
+  margin: 0 auto;
+  border: 1px solid #001337;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.0588372px;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+
+@media screen and (min-width: 767px) {
+  .card-lab {
+    gap: 20px;
+    padding: 12px 11.75px;
+    transition: transform .3s linear,
+    background-color .3s linear;
+  }
+  .card-lab__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card-lab__icon-box {
+    width: 41.19px;
+    height: 41.19px;
+  }
+  .card-lab__text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .card-lab__link {
+    width: 126.5px;
+  }
+  .card-lab_theme_project {
+    background-image: url("../images/lab/project.png");
+  }
+  .card-lab_theme_machine-learning {
+    background-image: url("../images/lab/machine-learning.png");
+  }
+  .card-lab_theme_data {
+    background-image: url("../images/lab/data.png");
+  }
+  .card-lab_theme_robot {
+    background-image: url("../images/lab/robot.png");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-lab {
+    gap: 35px;
+    padding: 20px 16px;
+    border-radius: 10px;
+    transition: transform .3s linear,
+    background-color .3s linear;
+  }
+  .card-lab:hover {
+    transform: translateY(-20px);
+    background-color: #009fac;
+    color: #ffffff;
+  }
+  .card-lab:hover .card-lab__link {
+    border-color: #ffffff;
+  }
+  .card-lab__title {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .card-lab__icon-box {
+    width: 45px;
+    height: 45px;
+  }
+  .card-lab__text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .card-lab__link {
+    width: 136px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .card-lab {
+    gap: 50px;
+    padding: 30px 20px 20px;
+    border-radius: 10px;
+    transition: transform .3s linear,
+    background-color .3s linear;
+  }
+  .card-lab__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .card-lab__icon-box {
+    width: 70px;
+    height: 70px;
+  }
+  .card-lab__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .card-lab__link {
+    width: 215px;
+    font-size: 14px;
+    line-height: 19px;
+    min-height: 40px;
+  }
+  .card-lab__icon {
+    width: 34px;
+    height: 34px;
+  }
+}
