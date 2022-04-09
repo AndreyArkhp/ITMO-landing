@@ -85,26 +85,7 @@ export default class PublicationsCard {
         this._tabletShareTooltip.classList.remove("publications-share_active");
     }
 
-    // Sets description element height based on number of lines in authors element.
-    _setDescriptionLineHeight() {
-        this._descriptionElement.removeAttribute("style");
-        if(this._tabletBreakpoint.matches) {
-            if(this._authorsElement.offsetHeight === 19) {
-                this._descriptionElement.setAttribute("style", `-webkit-line-clamp: 8`);
-            } else {
-                this._descriptionElement.setAttribute("style", `-webkit-line-clamp: 7`);
-            }
-        } else {
-            if(this._authorsElement.offsetHeight === 17) {
-                this._descriptionElement.setAttribute("style", `-webkit-line-clamp: 9`);
-            } else {
-                this._descriptionElement.setAttribute("style", `-webkit-line-clamp: 8`);
-            }
-        }
-    }
-
     _handleBreakpoints() {
-        this._setDescriptionLineHeight();
         if(this._isShareTooltipActive) {
             this._showShareTooltip();
         }else {
@@ -113,7 +94,6 @@ export default class PublicationsCard {
     }
 
     _handleRender() {
-        this._setDescriptionLineHeight();
         if(this._isShareTooltipActive) {
             this._showShareTooltip();
         }else {

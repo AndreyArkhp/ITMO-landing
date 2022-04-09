@@ -115,6 +115,15 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .publications__heading {
+        padding: 80px 0 0;
+    }
+
+    .publications__heading {
+        font-size: 36px;
+        line-height: 68px;
+        margin: 0 0 30px;
+    }
 
     .publications__swiper-container {
         padding: 0;
