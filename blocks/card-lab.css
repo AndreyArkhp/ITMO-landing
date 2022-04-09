@@ -10,11 +10,13 @@
   transition: background-color 0.1s linear;
   color: #001337;
   cursor: pointer;
+  transition: transform 0.1s linear;
 }
 
 .card-lab_active {
   background-color: #009fac;
   color: #ffffff;
+  transform: translateY(-10px);
 }
 
 .card-lab_active .card-lab__link {
@@ -49,12 +51,8 @@
 }
 
 .card-lab__icon {
-  display: block;
   width: 19.43px;
   height: 19.43px;
-  background: #ffffff;
-  border-radius: 36px;
-  margin: 0 auto;
 }
 
 .card-lab__text {
@@ -132,7 +130,7 @@
     transition: transform 0.1s linear;
   }
   .card-lab:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
     background-color: #009fac;
     color: #ffffff;
   }
