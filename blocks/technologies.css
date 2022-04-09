@@ -8,15 +8,6 @@
 .technologies__container{
     width: 100%;
     background-image: url("../images/background-mobile.jpg");
-    background-image: -webkit-image-set(
-            url('../images/background-mobile.jpg') 1x,
-            url('../images/background-tablet.jpg') 2x );
-    background-image: image-set(
-            url("../images/background-mobile.jpg") 1x,
-            url("../images/background-tablet.jpg") 2x);
-    background-image: image-set(
-            url("../images/background-mobile.jpg") 750w,
-            url("../images/background-tablet.jpg") 1024w);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
@@ -68,4 +59,17 @@
     border: 1px solid #fff;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+@media screen and (min-width: 480px) {
+    .technologies__container{
+        background-image: url("../images/background-tablet.jpg");
+        padding-bottom: 120px;
+        background-position: right;
+    }
+    .technologies__title{
+        margin: 58px auto 0 40px;
+        font-size: 54px;
+        line-height: 68;
+    }
 }
