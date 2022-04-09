@@ -8,6 +8,15 @@
 .technologies__container{
     width: 100%;
     background-image: url("../images/background-mobile.jpg");
+    background-image: -webkit-image-set(
+            url('../images/background-mobile.jpg') 1x,
+            url('../images/background-tablet.jpg') 2x );
+    background-image: image-set(
+            url("../images/background-mobile.jpg") 1x,
+            url("../images/background-tablet.jpg") 2x);
+    background-image: image-set(
+            url("../images/background-mobile.jpg") 750w,
+            url("../images/background-tablet.jpg") 1024w);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
