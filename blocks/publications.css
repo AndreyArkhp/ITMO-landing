@@ -14,6 +14,12 @@
     margin: 0 0 20px;
 }
 
+
+
+.publications__swiper-button {
+    display: none;
+}
+
 .publications__swiper {
     padding-bottom: 32px;
 }
@@ -29,6 +35,8 @@
     max-width: 288px;
     box-sizing: border-box;
     list-style-type: none;
+    min-height: 462px;
+    position: relative;
 }
 
 
@@ -63,6 +71,10 @@
     transform: none;
 }
 
+.publications__share-container {
+    position: absolute;
+}
+
 @media screen and (min-width: 768px) {
 
     .publications {
@@ -77,12 +89,14 @@
 
     .publications__item {
         max-width: 330px;
+        min-height: 515px;
     }
 
     .publications__swiper-container {
         padding: 0 39px;
         max-width: 690px;
         margin: 0 auto;
+        position: relative;
     }
 
     .publications__swiper {
@@ -96,5 +110,57 @@
     .publications__pagination > .swiper-pagination-bullet {
         width: 8px;
         height: 8px;
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .publications {
+        padding: 80px 0 0;
+    }
+
+    .publications__heading {
+        font-size: 36px;
+        line-height: 68px;
+        margin: 0 0 30px;
+    }
+
+    .publications__swiper-container {
+        padding: 0;
+        display: flex;
+        max-width: 1262px;
+        gap: 16px;
+        align-items: center;
+    }
+    .publications__swiper-button {
+        position: relative;
+        bottom: 20px;
+        display: block;
+        border: none;
+        border-radius: 50%;
+        height: 60px;
+        background-color: #fff;
+        padding: 0;
+        flex-basis: 60px;
+        min-width: 60px;
+        box-sizing: border-box;
+    }
+
+    .publications__swiper-button_type_back {
+        background-image: url(../images/icons/arrow-right-blue.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg);
+    }
+
+    .publications__swiper-button_type_forward {
+        background-image: url(../images/icons/arrow-right-blue.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .publications__item {
+        max-width: 348px;
+        min-height: 548px;
     }
 }
