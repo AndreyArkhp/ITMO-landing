@@ -9,7 +9,8 @@
   background-size: cover;
   color: #001337;
   cursor: pointer;
-  transition: transform 0.1s linear;
+  transition: transform .3s linear,
+    background-color .3s linear;
 }
 
 .card-lab_active {
@@ -90,7 +91,8 @@
   .card-lab {
     gap: 20px;
     padding: 12px 11.75px;
-    transition: transform 0.1s linear;
+    transition: transform .3s linear,
+    background-color .3s linear;
   }
   .card-lab__title {
     font-size: 12px;
@@ -126,7 +128,8 @@
     gap: 35px;
     padding: 20px 16px;
     border-radius: 10px;
-    transition: transform 0.1s linear;
+    transition: transform .3s linear,
+    background-color .3s linear;
   }
   .card-lab:hover {
     transform: translateY(-20px);
@@ -158,7 +161,8 @@
     gap: 50px;
     padding: 30px 20px 20px;
     border-radius: 10px;
-    transition: transform 0.1s linear;
+    transition: transform .3s linear,
+    background-color .3s linear;
   }
   .card-lab__title {
     font-size: 18px;
