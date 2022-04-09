@@ -1,5 +1,4 @@
 .publications-card {
-    position: relative;
     font-family: "Open Sans", Arial, sans-serif;
     box-sizing: border-box;
     display: flex;
@@ -100,6 +99,16 @@
 
 .publications-card__share:hover {
     opacity: .7;
+}
+
+.publications-card__share-container {
+    position: absolute;
+    right: 0;
+    bottom: 44px;
+}
+
+.publications-card__share-container::after {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {

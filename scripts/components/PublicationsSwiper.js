@@ -4,7 +4,6 @@ export default class PublicationsSwiper {
     constructor({cardData, swiperSelector, wrapperSelector, renderer}) {
         this._cardData = cardData;
         this._swiperSelector = swiperSelector;
-        this._wrapperSelector = wrapperSelector;
         this._wrapperElement = document.querySelector(wrapperSelector);
         this._renderer = renderer;
         this._mobileBreakpoint = window.matchMedia("(min-width: 320px)");
@@ -30,9 +29,9 @@ export default class PublicationsSwiper {
             spaceBetween: 8,
             pagination: {
                 el: ".publications__pagination",
-                clickable: true,
                 dynamicBullets: true,
                 dynamicMainBullets: 1,
+                clickable: false,
             }
         });
     }
@@ -49,7 +48,6 @@ export default class PublicationsSwiper {
             },
             pagination: {
                 el: ".publications__pagination",
-                clickable: true,
                 dynamicBullets: true,
                 dynamicMainBullets: 1,
             },
@@ -60,15 +58,15 @@ export default class PublicationsSwiper {
         return new Swiper(this._swiperSelector, {
             slidesPerView: 3,
             slidesPerGroup: 3,
-            spaceBetween: 33,
             rewind: true,
+            spaceBetween: 33,
             grid: {
                 fill: 'row',
                 rows: 2,
             },
             pagination: {
                 el: ".publications__pagination",
-                clickable: true,
+                clickable: false,
             },
             navigation: {
                 prevEl: ".publications__swiper-button_type_back",
@@ -96,7 +94,7 @@ export default class PublicationsSwiper {
         } else {
             this._desktopSwiper && this._desktopSwiper.destroy(true, true);
             this._tabletSwiper && this._tabletSwiper.destroy(true, true);
-            if(!this._mobileSwiper && this._mobileSwiper.destroyed) {
+            if(!this._mobileSwiper || this._mobileSwiper.destroyed) {
                 this._mobileSwiper = this._initMobileSwiper(true, true);
                 this._mobileSwiper.pagination.update();
             }
@@ -111,12 +109,6 @@ export default class PublicationsSwiper {
     }
 
     initSwiper() {
-        // this._desktopSwiper = this._initDesktopSwiper();
-        // this._desktopSwiper.destroy();
-        // this._tabletSwiper = this._initTabletSwiper();
-        // this._tabletSwiper.destroy();
-        // this._mobileSwiper = this._initMobileSwiper();
-        // this._mobileSwiper.destroy();
         this._setEventListeners();
         this._handleBreakpoints();
     }

@@ -14,6 +14,12 @@
     margin: 0 0 20px;
 }
 
+
+
+.publications__swiper-button {
+    display: none;
+}
+
 .publications__swiper {
     padding-bottom: 32px;
 }
@@ -30,6 +36,7 @@
     box-sizing: border-box;
     list-style-type: none;
     min-height: 462px;
+    position: relative;
 }
 
 
@@ -64,6 +71,10 @@
     transform: none;
 }
 
+.publications__share-container {
+    position: absolute;
+}
+
 @media screen and (min-width: 768px) {
 
     .publications {
@@ -85,10 +96,7 @@
         padding: 0 39px;
         max-width: 690px;
         margin: 0 auto;
-    }
-
-    .publications__swiper-button {
-        display: none;
+        position: relative;
     }
 
     .publications__swiper {
