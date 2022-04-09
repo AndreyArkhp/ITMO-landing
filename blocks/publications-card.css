@@ -144,6 +144,7 @@
     .publications-card__actions {
         margin: 10px 0 0;
         padding: 0 22px 0 20px;
+        min-height: 60px;
     }
 
     .publications-card__link {
