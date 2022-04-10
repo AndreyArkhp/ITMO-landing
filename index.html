@@ -9,47 +9,49 @@
   <body class="page">
     <header class="header">
       <div class="header__content">
-        <button class="header__burger-menu"></button>
-        <img src="./images/Header/logo.svg" alt="Логотип" class="header__logo" />
-        <button class="header__close-icon"></button>
+        <div class="header__control-menu">
+          <button class="header__burger-menu"></button>
+          <img src="./images/Header/logo.svg" alt="Логотип" class="header__logo" />
+          <button class="header__close-icon"></button>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#about" class="header__menu-link">О нас</a></li>
+            <li class="header__menu-item">
+              <a href="#lab" class="header__menu-link">Лаборатория</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#projects" class="header__menu-link">Проекты</a>
+            </li>
+            <li
+              class="header__menu-item header__menu-item_type_container header__menu-item_type_ligth"
+            >
+              <button class="header__control-acordion">Образование</button>
+              <ul class="header__menu-list header__nested-list">
+                <li
+                  class="header__menu-item header__menu-link_size_small header__menu-item_type_ligth"
+                >
+                  <a href="#magistracy" class="header__menu-link" id="magistracy-btn"
+                    >Магистратура</a
+                  >
+                </li>
+                <li
+                  class="header__menu-item header__menu-link_size_small header__menu-item_type_ligth"
+                >
+                  <a href="#graduate" class="header__menu-link" id="graduate-btn">Аспирантура</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a href="#publications" class="header__menu-link">Публикации</a>
+            </li>
+            <li class="header__menu-item"><a href="#team" class="header__menu-link">Команда</a></li>
+            <li class="header__menu-item">
+              <a href="#feedback" class="header__menu-link">Связаться</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item"><a href="#about" class="header__menu-link">О нас</a></li>
-          <li class="header__menu-item">
-            <a href="#lab" class="header__menu-link">Лаборатория</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#projects" class="header__menu-link">Проекты</a>
-          </li>
-          <li
-            class="header__menu-item header__menu-item_type_container header__menu-item_type_ligth"
-          >
-            <button class="header__control-acordion">Образование</button>
-          </li>
-          <li>
-            <ul class="header__menu-list header__nested-list">
-              <li
-                class="header__menu-item header__menu-link_size_small header__menu-item_type_ligth"
-              >
-                <a href="#magistracy" class="header__menu-link" id="magistracy-btn">Магистратура</a>
-              </li>
-              <li
-                class="header__menu-item header__menu-link_size_small header__menu-item_type_ligth"
-              >
-                <a href="#graduate" class="header__menu-link" id="graduate-btn">Аспирантура</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__menu-item">
-            <a href="#publications" class="header__menu-link">Публикации</a>
-          </li>
-          <li class="header__menu-item"><a href="#team" class="header__menu-link">Команда</a></li>
-          <li class="header__menu-item">
-            <a href="#feedback" class="header__menu-link">Связаться</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
       <section class="technologies">

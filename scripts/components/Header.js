@@ -1,3 +1,4 @@
+export const menuList = document.querySelector(".header__menu-list");
 export const btnCloseMenu = document.querySelector(".header__close-icon");
 export const btnBurgerMenu = document.querySelector(".header__burger-menu");
 export const linkContainer = document.querySelector(".header__menu-item_type_container");
