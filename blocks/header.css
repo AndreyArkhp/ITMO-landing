@@ -148,6 +148,12 @@
   .header {
     min-height: 60px;
   }
+  .header__menu_open {
+    width: 330px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .header__logo {
     margin: 14px auto;
     width: 94.67px;

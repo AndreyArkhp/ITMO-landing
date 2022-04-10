@@ -4,6 +4,7 @@ export const btnBurgerMenu = document.querySelector(".header__burger-menu");
 export const linkContainer = document.querySelector(".header__menu-item_type_container");
 export const magistracyBtn = document.querySelector("#magistracy-btn");
 export const graduateBtn = document.querySelector("#graduate-btn");
+const header = document.querySelector(".header");
 const menu = document.querySelector(".header__menu");
 const logo = document.querySelector(".header__logo");
 const nestedList = document.querySelector(".header__nested-list");
@@ -21,6 +22,7 @@ function unsetOpenedList() {
 }
 
 export function closeMenu() {
+  header.classList.remove("header__menu_open");
   menu.classList.remove("header__menu_active");
   btnCloseMenu.classList.remove("header__close-icon_active");
   logo.classList.remove("header__logo_menu_open");
@@ -29,6 +31,7 @@ export function closeMenu() {
 }
 
 export function openMenu() {
+  header.classList.add("header__menu_open");
   menu.classList.add("header__menu_active");
   btnCloseMenu.classList.add("header__close-icon_active");
   logo.classList.add("header__logo_menu_open");
