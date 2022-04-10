@@ -144,6 +144,9 @@
     line-height: 1.42;
     letter-spacing: 0.1px;
   }
+
+  }
+@media screen and (min-width: 680px) {
   .study__cards {
     margin: 0 0 30px;
     padding: 20px;
@@ -152,7 +155,7 @@
   .study__card {
     grid-template-areas:
     "info img";
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 1.21fr 1fr;
     column-gap: 30px;
   }
   .study__img {
@@ -185,4 +188,4 @@
     line-height: 1.3;
   }
 
-  }
+}
