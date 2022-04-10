@@ -65,7 +65,7 @@
   padding: 4px 0 0 10px;
   margin-block-start: 10px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.0588372px;
@@ -78,7 +78,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   display: flex;
   align-items: center;
   text-align: center;
@@ -95,6 +95,8 @@
   background-position: center;
 }
 .study__options {
+  margin: 0 auto;
+  max-width: 450px;
   display: flex;
   width: 100%;
   background-color: transparent;
@@ -125,3 +127,61 @@
   letter-spacing: 0.0588372px;
   width: 54%;
 }
+@media screen and (min-width: 480px) {
+  .study{
+    padding: 60px 0;
+  }
+  .study__container{
+    max-width: calc(100% - 78px);
+  }
+  .study__title{
+    font-size: 24px;
+    letter-spacing: 0.1px;
+  }
+  .study__text {
+    margin: 30px 0 40px;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.1px;
+  }
+  .study__cards {
+    margin: 0 0 30px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .study__card {
+    grid-template-areas:
+    "info img";
+    grid-template-columns: 340px 1fr;
+    column-gap: 30px;
+  }
+  .study__img {
+    height: 282px;
+    border-radius: 10px;
+  }
+  .study__card-title{
+    margin: 0;
+    line-height: 17px;
+  }
+  .study__list{
+    padding: 11px 0 0 8px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+  }
+  .study__list-link{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.36;
+  }
+  .study__options {
+    border-radius: 10px;
+    height: 44px;
+  }
+  .study__option{
+    height: 44px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  }
