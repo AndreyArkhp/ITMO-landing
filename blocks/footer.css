@@ -133,6 +133,7 @@
 @media screen and (min-width: 768px) {
     .footer{
         padding: 60px 39px;
+        padding-left: calc((100% - 690px)/2 );
         grid-template-columns: 210px 90px 90px 206px;
         grid-template-areas:
         "footer__logo footer__logo footer__logo footer__logo"
@@ -179,5 +180,40 @@
         margin: 5px 0 0;
         text-align: start;
         letter-spacing: 0.1px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .footer {
+        padding: 80px 165px;
+        padding-left: calc((100% - 1110px) / 2);
+        grid-template-columns: 263px 95px 95px 206px;
+        row-gap: 37.5px;
+        column-gap: 150px;
+    }
+    .footer__info{
+        margin-top: 11px;
+        max-width: 240px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .footer__text{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .footer__title{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .footer__list-link{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .footer__city{
+        font-weight: 600;
+        line-height: 167%;
+    }
+    .footer__address{
+        font-size: 14px;
+        line-height: 19px;
     }
 }
