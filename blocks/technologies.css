@@ -7,6 +7,8 @@
 }
 .technologies__container{
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     background-image: url("../images/background-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,6 +35,7 @@
     max-width: 445px;
 }
 .technologies__text{
+    max-width: 445px;
     margin: 16px 16px 0;
     font-style: normal;
     font-weight: 400;
@@ -59,4 +62,61 @@
     border: 1px solid #fff;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+@media screen and (min-width: 480px) {
+    .technologies__container{
+        background-image: url("../images/background-tablet.jpg");
+        padding-bottom: 120px;
+        background-position: right;
+    }
+    .technologies__title{
+        margin: 59px auto 0 40px;
+        font-size: 54px;
+        line-height: 1.26;
+    }
+    .technologies__subtitle{
+        margin-top: 0;
+        margin-left: 40px;
+        font-size: 54px;
+        line-height: 1.26;
+    }
+    .technologies__text{
+        margin-left: 40px;
+        margin-top: 32px;
+        max-width: 440px;
+        font-size: 18px;
+        line-height: 1.66;
+    }
+    .technologies__link{
+        margin-left: 40px;
+        margin-top: 44px;
+        font-size: 18px;
+        line-height: 1.66;
+        max-width: 330px;
+        height: 60px;
+        border-radius: 10px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .technologies__container{
+        background-image: url("../images/background-desc.jpg");
+        padding-bottom: 124px;
+    }
+    .technologies__title{
+        margin: 92px 165px 0 auto;
+    }
+    .technologies__subtitle{
+        margin: 0 165px 0 auto;
+    }
+    .technologies__text{
+        margin: 35px 165px 0 auto;
+        font-size: 20px;
+        line-height: 1.5;
+        max-width: 445px;
+    }
+    .technologies__link{
+        max-width: 350px;
+        margin: 53px 260px 0 auto;
+    }
 }
