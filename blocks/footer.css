@@ -26,6 +26,16 @@
     font-size: 12px;
     line-height: 1.33;
 }
+.footer__text{
+    display: none;
+    margin: 12px 0 0;
+    grid-area: footer__text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.1px;
+}
 .footer__column{
 
 }
@@ -55,7 +65,6 @@
     line-height: 1.66;
 }
 .footer__list-link{
-
     letter-spacing: 0.1px;
     text-decoration: none;
     color: #fff;
@@ -102,7 +111,7 @@
     display: flex;
     margin: 21px 0 0;
     padding: 0;
-    width: 150px;
+    width: 149px;
     height: 22px;
     justify-content: space-between;
 }
@@ -119,4 +128,56 @@
     line-height: 16px;
     text-align: center;
     opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+    .footer{
+        padding: 60px 39px;
+        grid-template-columns: 210px 90px 90px 206px;
+        grid-template-areas:
+        "footer__logo footer__logo footer__logo footer__logo"
+        "footer__info footer__info footer__info footer__info"
+        "footer__text footer__column_type_about footer__column_type_education footer__contacts"
+        "footer__copyright footer__copyright . footer__social";
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+    .footer__text{
+        display: block;
+    }
+    .footer__logo{
+        width: 150px;
+        height: 54px;
+    }
+    .footer__title{
+        margin: 15px 0 12px;
+    }
+    .footer__list-link{
+        line-height: 1.33;
+    }
+    .footer__list-item{
+        margin-bottom: 4px;
+    }
+    .footer__city {
+        margin: 14px 0 15px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.12;
+        letter-spacing: 0.1px;
+    }
+    .footer__tel:first-of-type {
+        margin-top: 12px;
+    }
+    .footer__email{
+        margin-top: 14px;
+    }
+    .footer__social{
+        margin: 2px 0 0;
+
+    }
+    .footer__copyright{
+        margin: 5px 0 0;
+        text-align: start;
+        letter-spacing: 0.1px;
+    }
 }
