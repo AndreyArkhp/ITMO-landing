@@ -220,7 +220,6 @@
   .header__nested-list {
     max-height: fit-content;
     margin: 0;
-    opacity: 0;
     will-change: auto;
     display: flex;
     flex-direction: column;
@@ -241,12 +240,17 @@
     background: none;
     box-shadow: 0px 2px 0px #009fac;
   }
+
   .header__menu-item {
     min-width: 100px;
     text-align: center;
   }
-  .header__menu-item_type_container:hover > .header__nested-list {
+  .header__menu-item_type_container:hover {
     opacity: 1;
+  }
+
+  .header__menu-item_type_small {
+    box-shadow: none;
   }
   .header__menu-link {
     padding: 0;
