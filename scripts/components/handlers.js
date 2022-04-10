@@ -1,8 +1,8 @@
 import {
   btnCloseMenu,
   btnBurgerMenu,
-  handleClickCloseMenu,
-  handleClickOpenMenu,
+  closeMenu,
+  openMenu,
   linkContainer,
   openLinkContainer,
   magistracyBtn,
@@ -15,18 +15,22 @@ import { form, handlerSubmit } from "./form.js";
 import { handleBtnClick, studyBtns } from "./study.js";
 
 function setEventListener() {
-  btnCloseMenu.addEventListener("click", handleClickCloseMenu);
-  btnBurgerMenu.addEventListener("click", handleClickOpenMenu);
+  btnCloseMenu.addEventListener("click", closeMenu);
+  btnBurgerMenu.addEventListener("click", openMenu);
   linkContainer.addEventListener("click", openLinkContainer);
   containerCards.addEventListener("click", handleClickCard);
   studyBtns.forEach((btn) => {
     btn.addEventListener("click", handleBtnClick);
   });
   form.addEventListener("submit", handlerSubmit);
-  magistracyBtn.addEventListener("click", () => {
-    handleBtnClick("magistracy");
+  magistracyBtn.addEventListener("click", (event) => {
+    handleBtnClick(event, "magistracy");
+    closeMenu();
   });
-  graduateBtn.addEventListener("click", () => handleBtnClick("graduate"));
+  graduateBtn.addEventListener("click", (event) => {
+    handleBtnClick(event, "graduate");
+    closeMenu();
+  });
 }
 
 export default setEventListener;

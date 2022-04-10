@@ -19,7 +19,7 @@ function unsetOpenedList() {
   isOpened = false;
 }
 
-export function handleClickCloseMenu() {
+export function closeMenu() {
   menu.classList.remove("header__menu_active");
   btnCloseMenu.classList.remove("header__close-icon_active");
   logo.classList.remove("header__logo_menu_open");
@@ -27,7 +27,7 @@ export function handleClickCloseMenu() {
   unsetOpenedList();
 }
 
-export function handleClickOpenMenu() {
+export function openMenu() {
   menu.classList.add("header__menu_active");
   btnCloseMenu.classList.add("header__close-icon_active");
   logo.classList.add("header__logo_menu_open");
