@@ -189,3 +189,55 @@
   }
 
 }
+@media screen and (min-width: 1024px){
+  .study {
+    padding: 80px 0;
+  }
+  .study__container {
+    max-width: calc(100% - 270px);
+  }
+  .study__title {
+    font-size: 36px;
+    line-height: 1.89;
+  }
+  .study__text {
+    margin: 30px auto 58px;
+    max-width: 920px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .study__cards{
+    margin-bottom: 35px;
+    padding: 30px;
+  }
+  .study__card{
+    grid-template-columns: 1.36fr 1fr;
+    column-gap: 50px;
+  }
+  .study__img{
+    height: 364px;
+  }
+  .study__card-title {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .study__list {
+    padding: 20px 0 0 16px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .study__list-link{
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .study__options{
+    height: 60px;
+    max-width: 540px;
+  }
+  .study__option{
+    height: 60px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
