@@ -1,13 +1,18 @@
 .partners {
     background-color: rgba(0, 19, 55, 1);
     font-family: "Open Sans", Arial, sans-serif;
-    padding: 40px 0 0;
+    padding: 34px 16px 0 16px;
+    box-sizing: border-box;
     color:#FFFFFF;
+    height: 457px;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .partners__heading {
     text-align: center;
     text-transform: uppercase;
+    font-style: normal;
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
@@ -16,35 +21,97 @@
 }
 
 .partners__preamble {
-    /* max-width: 288px;
-    box-sizing: border-box;
-    list-style-type: none; */
+    
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.partners__recommendations {
+    margin: 0 0 16px 0;
 }
 
 .partners__company-list{
-    padding: 0;
+    padding: 22px 0 0;
     margin: 0 auto;
-    display: flex;
-    width: 320px;
     list-style-type: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    row-gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 33.33%);
+    grid-template-areas:
+            'rosneft gazprom mailgroup'
+            'siemens mailgroup1 gazprom1'
+            'sber sber huawei';
 }
 .partners__company{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 50px;
+    align-items: end;
 }
 .partners__image{
-    width: 75px;
-    height: 35px;
+    width: 48px;
     background-position: center;
     background-size: contain;
 }
+.partners__company_sber{
+    grid-area: sber;
+}
+.partners__company_huawei{
+    grid-area: huawei;
+}
+.partners__company_rosneft{
+    grid-area: rosneft;
+}
+.partners__company_gazprom{
+    justify-self: center;
+    grid-area: gazprom;
+    padding-left: 25px;
+}
+.partners__company_gazprom_double{
+    justify-self: end;
+    grid-area: gazprom1;
+}
+.partners__company_mail-group{
+    justify-self: end;
+    grid-area: mailgroup;
+}
+.partners__company_mail-group_double{
+    justify-self: center;
+    grid-area: mailgroup1;
+    padding: 5px 0 0 35px;
+}
+.partners__company_siemens{
+    grid-area: siemens;
+    padding: 0 0 5px 0;
+}
 
-@media screen and (min-width: 768px) {
+
+.partners__image_sber{
+    width: 150px;
+    margin: 5px 2px 0 0;
+}
+.partners__image_huawei{
+    width: 94px;
+}
+.partners__image_rosneft{
+    width: 90px;
+}
+.partners__image_gazprom{
+    width: 46px;
+}
+.partners__image_mail-group{
+    width: 64px;
+    margin: 11px 0 0;
+}
+.partners__image_siemens{
+    margin-left: 2px;
+    width: 80px;
+}
+
+/* @media screen and (min-width: 768px) {
 
     .partners {
         padding: 60px 0 0;
@@ -56,4 +123,4 @@
         line-height: 33px;
     }
 
-}
+} */

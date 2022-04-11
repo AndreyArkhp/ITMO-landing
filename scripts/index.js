@@ -22,7 +22,6 @@ const publicationsSwiper = new PublicationsSwiper({cardData: publicationsData, s
   setEventListener();
 
 const renderer = (card, templateSelector, cardPattern) => {
-    // const cardObject = new ProjectsCard({
     const cardObject = new cardPattern({
         data: card,
         templateSelector: templateSelector,
