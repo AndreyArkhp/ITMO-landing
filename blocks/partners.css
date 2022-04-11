@@ -1,12 +1,17 @@
 .partners {
+    /* display: flex; */
     background-color: rgba(0, 19, 55, 1);
     font-family: "Open Sans", Arial, sans-serif;
-    padding: 34px 16px 0 16px;
-    box-sizing: border-box;
     color:#FFFFFF;
+}
+.partners__container{
+    /* display: flex; */
+    background-color: rgba(0, 19, 55, 1);
     height: 457px;
     width: 320px;
     margin: 0 auto;
+    padding: 34px 16px 0 16px;
+    box-sizing: border-box;
 }
 
 .partners__heading {
@@ -21,7 +26,7 @@
 }
 
 .partners__preamble {
-    
+
     display: flex;
     flex-direction: column;
     font-style: normal;
