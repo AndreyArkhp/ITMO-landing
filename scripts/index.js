@@ -1,6 +1,6 @@
 import PublicationsCard from "./components/PublicationsCard.js";
 import PublicationsSwiper from "./components/PublicationsSwiper.js";
-import aboutSwiper from "./components/aboutSwiper.js";
+import {initAboutSwiper} from "./components/aboutSwiper.js";
 import { studyBtns, handleBtnClick } from "./components/study.js";
 import setEventListener from "./components/handlers.js";
 import {publicationsData} from "./utils/data.js";
@@ -18,7 +18,7 @@ const publicationsSwiper = new PublicationsSwiper({cardData: publicationsData, s
     }});
 publicationsSwiper.renderItems();
 publicationsSwiper.initSwiper();
-aboutSwiper.init();
+initAboutSwiper();
 setEventListener();
 
 const renderer = (card, templateSelector, cardPattern) => {
