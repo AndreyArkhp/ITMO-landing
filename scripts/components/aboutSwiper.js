@@ -14,22 +14,11 @@ const initMobileSwiper = () => {
     slidesPerView: 'auto',
     spaceBetween: 10,
     loopedSlides: 10,
-    // breakpoints: {
-    //   720: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 30
-    //   },
-    //   1440: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 32
-    //   },
-    // },
-
     pagination: {
       el: '.swiper-pagination',
       dynamicBullets: true,
       dynamicMainBullets: 1,
-      clickable: true
+      clickable: true,
     },
   });
 }
@@ -37,20 +26,44 @@ const initMobileSwiper = () => {
 const initTabletSwiper = () => {
   return new Swiper('.about__swiper', {
     loop: false,
+    centeredSlides: false,
     slidesPerView: 'auto',
     spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination',
       dynamicBullets: true,
       dynamicMainBullets: 1,
-      clickable: true
+      clickable: true,
     },
   });
 }
 
+const initDesktopSwiper = () => {
+  return new Swiper('.about__swiper', {
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 32,
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+      dynamicMainBullets: 1,
+      clickable: true,
+    },
+    navigation: {
+      prevEl: ".about__swiper-button_type_back",
+      nextEl: ".about__swiper-button_type_forward",
+    }
+  })
+}
+
 const handleBreakpoints = () => {
   if(desktopBreakpoint.matches) {
-
+    tabletSwiper && tabletSwiper.destroy(true, true);
+    mobileSwiper && mobileSwiper.destroy(true, true);
+    if(!desktopSwiper || desktopSwiper.destroyed) {
+      desktopSwiper = initDesktopSwiper();
+      desktopSwiper.pagination.update();
+    }
   } else if(tabletBreakpoint.matches) {
     desktopSwiper && desktopSwiper.destroy(true, true);
     mobileSwiper && mobileSwiper.destroy(true, true);

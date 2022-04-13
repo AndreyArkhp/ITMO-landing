@@ -5,10 +5,22 @@
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: normal;
     width: 100%;
+    /*overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__swiper-container {
+    width: 100%;
     overflow-x: hidden;
 }
 .about__container{
     max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .about__title{
     margin: 0 12px 0 20px;
@@ -117,9 +129,14 @@
     transform: none;
 }
 
+.about__swiper-button {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .about__container {
         margin-left: 39px;
+        width: calc(100% - 39px);
     }
 
     .about__title {
@@ -160,6 +177,7 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 7;
         margin: 20px 0 0;
+        padding-top: 20px;
         font-size: 14px;
         line-height: 19px;
         max-width: 290px;
@@ -179,5 +197,67 @@
     .about__pagination > .swiper-pagination-bullet {
         width: 8px;
         height: 8px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about__container {
+        margin: 0;
+        width: 100%;
+    }
+    .about__title {
+        font-size: 36px;
+        line-height: 68px;
+        margin: 0 0 30px;
+    }
+
+    .about__text {
+        max-width: 907px;
+        margin: 0 0 45.5px;
+        align-self: center;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .about__swiper-container {
+        display: flex;
+        align-items: center;
+        max-width: 1302px;
+        align-self: center;
+    }
+
+    .about__swiper-button {
+        position: relative;
+        display: block;
+        border: none;
+        bottom: 60px;
+        border-radius: 50%;
+        height: 60px;
+        background-color: #001337;
+        box-shadow: 0 4px 30px rgba(224, 240, 255, 0.1);
+        padding: 0;
+        flex-basis: 60px;
+        min-width: 60px;
+        box-sizing: border-box;
+    }
+
+    .about__swiper-button_type_back {
+        background-image: url(../images/icons/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg);
+        margin: 0 21px 0 16px;
+    }
+
+    .about__swiper-button_type_forward {
+        background-image: url(../images/icons/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 16px 0 13px;
+
+    }
+
+    .about__card {
+        max-width: 348px;
+        padding: 20px 20px 30px;
     }
 }
